@@ -295,7 +295,7 @@ if (document.querySelector(".js-download")) {
     var homeMail = document.querySelector(".home-landingpage__mail");
     var homeChat = document.querySelector(".home-landingpage__chat");
     var support = document.querySelector(".support-hero__image");
-    var cloud = document.querySelector(".cloud-hero__image");
+    var cloud = document.querySelector(".pricing-hero__image");
     var install = document.querySelector(".install-hero__image");
     var partners = document.querySelector(".partners-hero__image");
     var partnersBody = document.querySelector("body.partners");
@@ -383,6 +383,17 @@ if (document.querySelector(".js-download")) {
   xhttp.send();
 })();
 
+
+$(document).ready(function() {
+  var path = window.location.pathname;
+  if (path == '/pricing' || path == '/pricing/') {
+    if (window.location.hash.substr(1) == "cloud") {
+      $('.switch').removeClass('active');
+      $(".cloud").addClass(' active');
+    }
+  }
+})
+
 $('.switch').on('click', function () {
   $('.switch').removeClass('active');
   $(this).addClass(' active');
@@ -395,3 +406,43 @@ $('.switch').on('click', function () {
     $('.self-managed__container').css("display","block");
   }
 })
+
+$('.youtube-image-link, .youtube-text-link').on('click touch', function (e) {
+  var checkExist = setInterval(function() {
+    if ($('.featherlight').length) {
+      if ($(e.target).hasClass('pt')){
+        $(".featherlight .youtube-video")[0].src = "https://www.youtube.com/embed/nkzfriX8IlE?autoplay=1";
+      }
+      $(".featherlight .youtube-video")[0].src += "?autoplay=1";
+      clearInterval(checkExist);
+    }
+ }, 500);
+})
+
+$('.install_desktop-buttons .button').on('click', function (e) {
+  e.preventDefault();
+  var os =  e.target.dataset.os;
+  $('.install_desktop-buttons .button.active').removeClass('active');
+  $('.install_download.active').removeClass('active');
+
+  $(this).addClass(' active');
+  $('.install_download.'+os).addClass(' active');
+})
+
+if(location.pathname == "/install") {
+  var os="Unknown OS";
+  if (navigator.appVersion.indexOf("Win")!=-1) {
+    os="windows"
+  } else if (navigator.appVersion.indexOf("Mac")!=-1) {
+    os="mac";
+  } else if (navigator.appVersion.indexOf("Linux")!=-1) {
+    os="linux";
+  }
+
+  $('.install_desktop-buttons .button.active').removeClass('active');
+  $('.install_download.active').removeClass('active');
+
+  $(`.install_desktop-buttons .button.${os}`).addClass(' active');
+  $('.install_download.'+os).addClass(' active');
+}
+

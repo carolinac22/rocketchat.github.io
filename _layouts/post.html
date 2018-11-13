@@ -44,6 +44,15 @@ class: post
       </a>
     </div>
   {% endif %}
+  
+  {% if page.android_release %}
+    <div class="card theme_box--light blog-post__social flex-grid grid--center">
+      <p class="display--small type--nomargin col">Install the latest release:</p>
+      <a href="https://play.google.com/store/apps/details?id=chat.rocket.android">
+        <img class="googleplay" src="/images/install/google-play.svg">
+      </a>
+    </div>
+  {% endif %}
 
   <div class="space--2"></div>
 
@@ -106,33 +115,9 @@ class: post
         <small><a href="/category/{{ page.categories[0] | slugify}}" class="button--link">View all</a></small>
       </h3>
 
-      <div class="flex-grid">
-        {% for related in RelatedList limit:3 %}
-          <div class="col">
-            <a
-              class="card--blog card--blog__image"
-              href="{{ related.url | remove: "index.html" }}"
-              {% if related.cover %}
-                style="background-image: url('{{ related.cover }}')"
-              {% else %}
-                style="background-image: url('/images/blog/post.jpg')"
-              {% endif %}
-            >
-              <div class="card--blog__wrap">
-                <p class="card--blog__meta label--small theme_type--grey">
-                  {{ related.date | date: "%b %-d, %Y" }}
-                  —
-                  {% assign words = related.content | number_of_words %}
-                  {% if words < site.wpm %} 1 min {% else %} {{ words | divided_by: site.wpm }} mins {% endif %} read
-                </p>
-                <h3 class="card--blog__title theme_type--dark">{{ related.title }}</h3>
-                <div class="card--blog__data">
-                  <p class="card--blog__category theme_box--dark-medium theme_type--dark tag">{{ related.categories[0] }}</p>
-                  <p class="card--blog__author text--small theme_type--grey">by {{ related.author }}</p>
-                </div>
-              </div>
-            </a>
-          </div>
+      <div class="blog__related">
+        {% for post in RelatedList limit:3 %}
+          {% include blog/article-link.html post=post %}
         {% endfor %}
       </div>
     </div>
