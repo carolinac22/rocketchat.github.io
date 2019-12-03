@@ -7,6 +7,14 @@ en:
   and: and
   feature: feature
   install: Install
+  solutions: Solutions
+  team-collaboration: Team Collaboration
+  security: Security
+  pricing: Pricing
+  community: Community
+  docs: Docs
+  contact: Contact
+  try-now: Try Now
 pt:
   english: Inglês
   portuguese: Português
@@ -16,4 +24,12 @@ pt:
   and: e
   feature: funcionalidade
   install: Instalar
+  solutions: Soluções
+  team-collaboration: Colaboração de Times
+  security: Segurança
+  pricing: Preço
+  community: Comunidade
+  docs: Documentação
+  contact: Contato
+  try-now: Experimente Agora
 

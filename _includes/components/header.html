@@ -1,0 +1,42 @@
+{% assign tg = site.data.i18n-general[include.lang] %}
+
+
+<div class="app-header {% if page.class == 'pricing' %} {% elsif page.theme == 'light'%}app-header--light{% else %}app-header--black{% endif %} {% if page.class == 'pricing' %}top{% endif %}">
+    <header class="app-header_wrap">
+      <div class="container">
+        <h1 class="app-header_logo">
+          <a href="/">
+            <img class="dark" src="/images/default/logo--dark.svg" alt="Rocket.Chat">
+            <img class="normal" src="/images/default/logo.svg" alt="Rocket.Chat">
+          </a>
+        </h1>
+
+        <input type="checkbox" id="handle-menu" />
+        <label class="app-header_handle-menu" for="handle-menu"><span></span></label>
+
+        <nav class="app-header_menu">
+          <ul>
+            <li><a {% if page.class == 'install' %}class="active"{%endif%} href="/install">{{tg.install}}</a></li>
+
+            <li class="solutions">
+                {{tg.solutions}}
+              <ul class="dropdown">
+                <li><a class="" href="/devops">Devops</a></li>
+                <li><a class="" href="/customer-solutions">Omnichannel</a></li>
+                <li><a class="" href="/team-collab">{{tg.team-collaboration}}</a></li>
+                <li><a class="" href="/security">{{tg.security}}</a></li>
+              </ul>
+            </li>
+
+            <li><a {% if page.class == 'pricing' %}class="current-page"{%endif%} href="/pricing">{{tg.pricing}}</a></li>
+            <li><a {% if page.class == 'community' %}class="current-page"{%endif%} href="/community">{{tg.community}}</a></li>
+            <li><a {% if page.class == 'docs' %}class="current-page"{%endif%} href="/docs/">{{tg.docs}}</a></li>
+            <li><a {% if page.class == 'blog' %}class="current-page"{%endif%} href="/blog/">Blog</a></li>
+            <li><a {% if page.class == 'contact' %}class="current-page"{%endif%} href="/contact">{{tg.contact}}</a></li>
+          </ul>
+          <a id="try-now" class="app-header_install" href="//cloud.rocket.chat/trial/bronze"><span><img src="/images/default/cloud.svg" alt="Install"></span> {{tg.try-now}}</a>
+        </nav>
+
+      </div>
+    </header>
+  </div>
