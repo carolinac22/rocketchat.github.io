@@ -1,18 +1,1 @@
-{
-  "name": "rocketchat.github.io",
-  "description": "",
-  "scripts": {
-  },
-  "env": {
-  },
-  "formation": {
-  },
-  "addons": [
 
-  ],
-  "buildpacks": [
-    {
-      "url": " https://github.com/sammyjopeters/heroku-buildpack-jekyll.git"
-    }
-  ]
-}
