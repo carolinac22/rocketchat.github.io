@@ -81,7 +81,7 @@
     min-height: 90vh;
   }
 
-  .install {
+  .install-buttons {
     text-align: center;
     margin: 2em -0.5em;
 
@@ -113,6 +113,10 @@
   position: relative;
   right: -$gutter;
   margin-bottom: 2em;
+  display: block;
+  max-height:700px;
+  width: auto;
+  height: auto;
 
   @media screen and (min-width: $tablet) {
     position: absolute;
@@ -485,6 +489,7 @@ body.index .featherlight .featherlight-content {
     max-height: 100%;
     border: 0;
     background: rgba(0, 0, 0, 0);
+    width: unset;
 }
 
 .youtube-video {
@@ -538,7 +543,7 @@ body.index .featherlight .featherlight-content {
   }
 }
 
-.featherlight-content > #youtube-link {
+body.index .featherlight .featherlight-content > #youtube-link {
   display: block;
   width: 70vw;
   height: 90vh;
@@ -547,5 +552,79 @@ body.index .featherlight .featherlight-content {
   @media (max-width: $tablet) {
     width: 97vw;
     height: 90vh;
+  }
+}
+
+// Home Clients Slideshow
+
+/* Slideshow container */
+
+
+.clients {
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slider {
+    position: absolute;
+    width: 68em;
+    opacity: 0;
+
+    @media (max-width: 1060px) {
+      width: calc(100% + 1em);
+      left: -1.5em;
+    }
+
+    @media (max-width: $tablet) {
+      width: calc(100% + 1em);
+      left: -1em;
+    }
+
+    @media (max-width: $tablet) {
+      width: 100%;
+      left: 0;
+    }
+
+    &.fixed {
+      opacity: 1;
+    }
+  }
+
+  .slider__logo-container {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+    margin-top: 16px;
+
+    img {
+      width: 15%;
+      max-height: 60px;
+      &:not(:last-child){
+        margin-right: 80px;
+        @media (max-width: $tablet) {
+          margin-right: 20px;
+        }
+      }
+
+      @media (max-width: $tablet) {
+        width: 20%;
+        margin-right: 20px;
+      }
+
+      @media (max-width: $mobile) {
+        width: 20%;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+  .fade {
+    transition: opacity 2s;
   }
 }

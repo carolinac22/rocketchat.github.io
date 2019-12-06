@@ -4,9 +4,9 @@ date: 2016-03-14 10:00:00
 link: //www2.blackducksoftware.com/news/releases/black-duck-announces-open-source-rookies-of-the-year
 hidden: true
 author: Black Duck Software
-cover: /images/posts/2016/03/2016-03-14-black-duck-rookies-of-the-year/Black-Duck-Logo.jpg
 extUrl: https://www2.blackducksoftware.com/news/releases/black-duck-announces-open-source-rookies-of-the-year
-isLogo: true
+cover: /images/press/black-duck.png
+bgSize: logo
 bgColor: "ffffff"
 categories:
 - Press

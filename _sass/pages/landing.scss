@@ -39,10 +39,14 @@
   }
 
   .hero h1 {
-    margin: 80px 0 112px;
+    margin: 80px 0 16px;
     font-size: 32px;
     font-weight: bold;
     line-height: 1.3;
+  }
+
+  .hero p {
+    margin-bottom: 32px;
   }
 
   .hero h2 {
@@ -104,11 +108,15 @@
 
   .apps-list-container {
     min-height: 300px;
-    margin-top: 17px;
-  }
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: none;
 
-  .apps-list {
-    max-width: 682px;
+    .flex-container {
+      @media screen and (max-width: $tablet) {
+        flex-direction: column-reverse;
+      }
+    }
   }
 
   .app-card {
@@ -116,18 +124,18 @@
     min-height: 176px;
     box-sizing: border-box;
     font-size: 14px;
+    width: 100%;
+    @media screen and (max-width: $marketplace-break) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .apps-list .app-card {
-    max-width: 326px;
     padding: 22px 30px;
-    margin-bottom: 30px;
     background: $grey-bg;
     cursor: pointer;
-
-    &:first-child {
-      margin-right: 30px;
-    }
 
     @media screen and (max-width: $tablet) {
       margin-left: auto;
@@ -140,8 +148,12 @@
     }
   }
 
+
   .apps-list .content-wrapper {
-    max-width: 216px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    justify-content: space-between;
   }
 
   .app-card .name, .search-result .name {
@@ -161,6 +173,9 @@
     height: 62px;
     margin-right: 16px;
     box-sizing: border-box;
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 22px;
+    }
   }
 
   .app-card .icon-wrapper .icon {
@@ -174,11 +189,36 @@
     margin-bottom: 12px;
     line-height: 1.25;
     font-size: 16px;
+    max-height: 100px;
+    overflow: hidden;
+  }
+
+  .add-app-modal-wrapper .modal-content {
+    @media screen and (max-width: $tablet) {
+      width: 100% !important;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      top: unset;
+      left: unset;
+      margin: 0;
+    }
+    .app-card .description {
+      max-height: 300px;
+      overflow: auto;
+
+    }
   }
 
   .links-list {
     font-size: 16px;
     line-height: 1;
+    min-width: 220px;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+
   }
 
   .links-list-item {
@@ -193,8 +233,23 @@
     color: $brand;
   }
 
+  .categories-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categories-select {
+    width: 100%;
+    margin-bottom: 16px;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+
+  }
+
   .categories-list-item {
     margin-bottom: 8px;
+    margin-right: 6px;
     min-height: 20px;
     box-sizing: border-box;
     line-height: 1;
@@ -218,7 +273,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 10000;
   }
 
   .apps-message-container {
@@ -264,6 +319,17 @@
     border-radius: 2px;
     background: #FFF;
     animation: scaleIn .5s ease;
+
+    .app-card {
+      @media screen and (max-width: $tablet) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .name {
+      text-align: center;
+    }
   }
 
   .modal-content .close-button {
@@ -307,5 +373,70 @@
     position: static;
     font-size: 1rem;
     text-transform: none;
+  }
+}
+
+.apps-loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 100px 0;
+
+  .loading-spinner {
+    width: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
+.apps-disclaimer {
+  &__container {
+    display: flex;
+    align-content: center;
+    background-color: $brand-lignt;
+    margin-bottom: 48px;
+    padding: 32px 34px;
+    justify-content: space-between;
+    height: 108px;
+    width: 100%;
+    @media screen and (max-width: $mobile) {
+      padding: 16px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 24px;
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__button {
+    min-width: 100px;
+    height: 44px;
+    align-self: center;
+  }
+
+  &__text {
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.apps-list-wrapper {
+  @media screen and (min-width: 1175px) {
+    margin-left: 160px;
   }
 }

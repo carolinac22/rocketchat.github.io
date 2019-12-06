@@ -36,25 +36,23 @@ redirect_from:
         <a data-os="linux" href="" class="button linux">Linux</a>
       </div>
       <div class="install_download mac active">
-        <a class="store-download" target="_blank" rel="noopener noreferrer" href="//itunes.apple.com/app/rocket-chat/id1148741252">
+        <a class="store-download" target="_blank" rel="noopener noreferrer" href="//itunes.apple.com/us/app/rocket-chat/id1086818840">
           <img class="itunes" src="/images/install/mac-store.svg">
         </a>
-        <a href="https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/{{ site.data.install.desktop.version }}/rocketchat-{{ site.data.install.desktop.version }}.dmg" download="" data-download="macos" class="button manual-download"><img class="download-icon" src="/images/install/download.svg" alt="download"> Direct Download</a>
+        <a href="https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/{{ site.data.install.desktop.version }}/rocketchat-{{ site.data.install.desktop.version }}.dmg" download="" data-download="macos" data-label="MacOS" class="button manual-download"><img class="download-icon" src="/images/install/download.svg" alt="download"> Direct Download</a>
       </div>
       <div class="install_download windows">
-        <a href="https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/{{ site.data.install.desktop.version }}/rocketchat-setup-{{ site.data.install.desktop.version }}.exe" class="button manual-download"><img class="download-icon" src="/images/install/download.svg" alt="download"> Direct Download</a>
+        <a href="https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/{{ site.data.install.desktop.version }}/rocketchat-setup-{{ site.data.install.desktop.version }}.exe" data-label="Windows" class="button manual-download"><img class="download-icon" src="/images/install/download.svg" alt="download"> Direct Download</a>
       </div>
       <div class="install_download linux">
           <p class="label theme_type--grey">Select your Version</p>
           <div class="select--theme-dark select-download">
             <select class="js-select-download" data-target="linux">
               <option value="https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/{{ site.data.install.desktop.version }}/rocketchat_{{ site.data.install.desktop.version }}_amd64.deb">deb(x64)</option>
-              <option value="https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/{{ site.data.install.desktop.version }}/rocketchat_{{ site.data.install.desktop.version }}_i386.deb">deb(x86)</option>
               <option value="https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/{{ site.data.install.desktop.version }}/rocketchat-{{ site.data.install.desktop.version }}.x86_64.rpm">rpm(x64)</option>
-              <option value="https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/{{ site.data.install.desktop.version }}/rocketchat-{{ site.data.install.desktop.version }}.i686.rpm">rpm(x86)</option>
             </select>
           </div>
-          <a href="" download="" data-download="linux" class="button manual-download"><img class="download-icon" src="/images/install/download.svg" alt="download"> Direct Download</a>
+          <a href="" download="" data-download="linux" data-label="Linux" class="button manual-download"><img class="download-icon" src="/images/install/download.svg" alt="download"> Direct Download</a>
       </div>
 
     </div>
@@ -91,7 +89,7 @@ redirect_from:
       <p class="display--small theme_type--grey">Deploys to cloud servers under your control or on-prem</p>
     </div>
   </div>
-  
+
   <div class="space--3"></div>
 
   <div class="install__tags-container">
@@ -99,7 +97,7 @@ redirect_from:
       {% include install-tags.html tag=tag %}
     {% endfor %}
   </div>
-  
+
   <div class="space--6"></div>
 
   <div class="card theme_box--dark-strong try-cloud">

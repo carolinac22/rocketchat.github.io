@@ -10,11 +10,12 @@
   var APPS_MESSAGE_CONTAINER = $('.apps-message-container')
   var APPS = []
 
-  var clipboard
-
   var getAppsData = function () {
-    return fetch('https://marketplace.rocket.chat/v1/apps')
-      .then(function (res) {
+    return fetch('https://marketplace.rocket.chat/v1/apps', {
+      headers: {
+        'X-Requested-With': 'Rocketeers Website'
+      }
+    }).then(function (res) {
         return res.json()
       })
       .then(function (data) {
@@ -22,6 +23,8 @@
         APPS = parsed
 
         createAppList(APPS)
+        $(".apps-loading").css('display','none')
+        $(".apps-list-container").css('display','block')
       })
       .catch((err) => {
         showFetchError()
@@ -63,9 +66,20 @@
 
   var createCategoriesList = function (categories) {
     var list = ''
+    var length = categories.length < 2 ? categories.length : 2;
+
+    for (var i = 0; i < length; i++) {
+      list += '<li class="categories-list-item"><span class="app-category">' + categories[i] + '</span></li>'
+    }
+
+    return list
+  }
+
+  var createCategoriesSelect = function (categories) {
+    var list = '<option value="" class="categories--item"><button data-category="" class="app-category-button ">All Apps</button></option>'
 
     for (var i = 0; i < categories.length; i++) {
-      list += '<li class="categories-list-item"><span class="app-category">' + categories[i] + '</span></li>'
+      list += '<option value="' + categories[i].title + '" class="categories--item"><button data-category=' + categories[i].title + 'class="app-category-button ">' + categories[i].title + '</button></option>'
     }
 
     return list
@@ -113,9 +127,14 @@
     var menuListObj = {}
     var categoriesTitles = getCategoriesTitles(categories)
 
+    var categoriesSelect = createCategoriesSelect(categories)
+
+    $('.categories-select select').html(categoriesSelect)
+
     if (categoriesTitles.indexOf(selectedCategory) == -1) {
       selectedCategory = ''
     }
+
     menuListObj = createCategoriesMenuList(categories, selectedCategory)
 
     list.append(menuListObj.virtualList)
@@ -150,22 +169,22 @@
     return newCardEl
   }
 
-  var createAppListRow = function (apps) {
-    var listEl = $('<li class="flex-grid"></li>')
+  // var createAppListRow = function (apps) {
+  //   var listEl;
 
-    for (var i = 0; i < apps.length; i++) {
-      var current = apps[i]
+  //   for (var i = 0; i < apps.length; i++) {
+  //     var current = apps[i]
 
-      if (current) {
-        var card = createAppCard(current)
-        bindAppCardEvents(card, apps[i])
+  //     if (current) {
+  //       var card = createAppCard(current)
+  //       bindAppCardEvents(card, apps[i])
 
-        listEl.append(card)
-      }
-    }
+  //       listEl.append(card)
+  //     }
+  //   }
 
-    return listEl
-  }
+  //   return listEl
+  // }
 
   var createSearchResult = function (result) {
     var searchResultTemplate = $('#search-result-template').text()
@@ -189,11 +208,14 @@
     var appsListEl = APPS_LIST_EL
     appsListEl.empty()
 
-    for (var i = 0; i < appsData.length; i += 2) {
-      var row = createAppListRow([appsData[i], appsData[i + 1]])
+    appsData.forEach(app => {
+      if (app) {
+        var card = createAppCard(app)
+          bindAppCardEvents(card, app)
 
-      appsListEl.append(row)
-    }
+          appsListEl.append(card)
+      }
+    });
   }
 
   var showFetchError = function () {
@@ -321,19 +343,10 @@
     return newModalContent
   }
 
-  var createModalButtons = function (app) {
-    var url = 'https://marketplace.rocket.chat/v1/apps/' + app.id + '/download'
-    var downloadButton = '<a class="button" target="_blank" href="' + url + '">Download</a>'
-    var copyUrlButton = '<button class="button--ghost copy-url-button" data-clipboard-action="copy" data-clipboard-text="' + url + '">Copy URL</button>'
-    var list = $('<ul class="buttons-list"></ul>')
-
-    list.append('<li class="buttons-list-item">' + downloadButton + '</li>')
-    list.append('<li class="buttons-list-item">' + copyUrlButton + '</li>')
-
-    return list
-  }
-
   var openModal = function (app) {
+    $("html").css({
+      'overflow' : 'hidden'
+   });
     MODAL_WRAPPER_EL.removeClass('display-none')
     MODAL_WRAPPER_EL.empty()
 
@@ -342,22 +355,19 @@
 
     content.find('.app-card-wrapper').html(card)
 
-    var buttons = createModalButtons(app)
-
-    content.find('.content-wrapper').append(buttons)
-
     MODAL_WRAPPER_EL.html(content)
-
-    clipboard = new ClipboardJS(MODAL_WRAPPER_EL.find('.copy-url-button')[0])
 
     bindModalEvents(app)
   }
 
   var closeModal = function () {
     MODAL_WRAPPER_EL.addClass('display-none')
-    clipboard.destroy()
 
     unbindModalEvents()
+    $("html").css({
+      'overflow' : 'auto'
+   });
+
   }
 
   var onSearch = function (term) {
@@ -370,6 +380,13 @@
 
   var bindCategoriesMenuEvents = function () {
     var appCategoryButons = $('.app-category-button')
+    var appCategorySelect = $('.categories-select select')
+
+    appCategorySelect.on('change', function (ev) {
+      var category = ev.target.value
+
+      filterByCategory(category, APPS)
+    })
 
     appCategoryButons.on('click', function (ev) {
       var target = $(ev.target)

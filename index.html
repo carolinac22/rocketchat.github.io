@@ -23,30 +23,39 @@ redirect_from:
   <section class="banner container">
     <div class="col">
       <div class="banner_wrap align--center {% if page.theme == 'light' %}card theme_box--light{% else %}card theme_box--dark-strong{% endif %}">
-      <div class="{% if page.theme == 'dark' %}theme_type--grey{% endif %}"> Moving from Atlassian? 🚀 <a target="_blank" href="https://rocket.chat/atlassian" rel="noopener noreferrer"> <strong>Welcome to Rocket.Chat!</strong></a>
+      <div  class="{% if page.theme == 'dark' %}theme_type--grey{% endif %}"> Moving from Atlassian Hipchat? 🚀 <a id="atlassian-home-link" target="_blank" href="https://rocket.chat/atlassian" rel="noopener noreferrer"> <strong>Welcome to Rocket.Chat!</strong></a>
       </div>
     </div>
   </section>
-
 
   <div class=" home-hero">
     <section class="container">
       <div class="home-hero_wrap home-landingpage">
         <h1 class="display--big theme_type--dark">Open Source Team Communication</h1>
         <p class="display--small theme_type--grey">Rocket.Chat is free, unlimited and open source. Replace email, HipChat &amp; Slack with the ultimate team chat software solution.</p>
-        <div class="install">
-          <a href="/pricing" rel="noopener noreferrer" class="button">Start cloud trial</a>
+        <div class="install-buttons">
+          <a href="//cloud.rocket.chat/trial/bronze" rel="noopener noreferrer" class="button">Start cloud trial</a>
           <a href="/install" class="button button--ghost">Install own server</a>
         </div>
       </div>
 
       <img
         class="home-hero_image"
-        src="/images/index/devices@3x.png" alt="Rocket Chat apps"
+        src="/images/index/devices.png" alt="Rocket Chat apps"
       />
     </section>
   </div>
 
+  <div class="space--8"></div>
+
+  <section class="container" style="z-index:1000">
+      <div class="card theme_box--light-strong clients">
+        <p class="label theme_type--grey align--center">TRUSTED BY</p>
+        {% include client-slideshow.html %}
+      </div>
+    </section>
+
+  <div class="space--8"></div>
   <div class="space--8"></div>
 
   <div class="container home-landingpage">
@@ -54,11 +63,11 @@ redirect_from:
       <div class="col--third">
         <h2 class="display theme_type--dark">Replace Email</h2>
         <p class="theme_type--grey">Open up the conversation and remove the need for CC/BCC by using Rocket.Chat Channels and Private Groups to speak to your team openly for greater transparency.</p>
-        <p class="theme_type--grey">Include relevant participants with the @username mention to notify those immediately. For important announcements to all members of a group, use @all.</p>
+        <p class="theme_type--grey">Include relevant participants with the @username mention to notify those immediately. For important announcements to all members of a group, use @all. Full chat history allows participants to join and leave at any time.</p>
       </div>
 
       <div class="col--third">
-        <img class="home-landingpage__mail" src="/images/index/landingpage-mail.png" alt="Our mission Replace Email" />
+        <img class="home-landingpage__mail" src="/images/index/landingpage-mail.svg" alt="Our mission Replace Email" />
       </div>
     </div>
   </div>
@@ -75,7 +84,7 @@ redirect_from:
       </div>
 
       <div class="col--third">
-        <img class="home-landingpage__chat" src="/images/index/landingpage-teamchat.png" alt="Our mission Team Chat" />
+        <img class="home-landingpage__chat" src="/images/index/landingpage-teamchat.svg" alt="Our mission Team Chat" />
       </div>
     </div>
   </div>
@@ -133,7 +142,7 @@ redirect_from:
 
       <div class="col--third">
         <h3 class="theme_type--dark display--small"><strong>Trusted by blockchain innovators</strong></h3>
-        <p class="theme_type--grey">Join leading blockchain projects such as Aragon, Hyperledger, Golem and others in migrating from Slack. Do so easily thanks to <a class="button--link" href="//rocket.chat/docs/administrator-guides/import/slack//" target="_blank" rel="noopener noreferrer">Slack Importer</a> and <a class="button--link" href="//rocket.chat/docs/administrator-guides/import/slack/slackbridge/" target="_blank" rel="noopener noreferrer">Slack Bridge</a>.</p>
+        <p class="theme_type--grey">Join leading blockchain projects such as Aragon, Brave, Hyperledger, Golem, Tokenly and others in migrating from Slack. Do so easily thanks to <a class="button--link" href="//rocket.chat/docs/administrator-guides/import/slack//" target="_blank" rel="noopener noreferrer">Slack Importer</a> and <a class="button--link" href="//rocket.chat/docs/administrator-guides/import/slack/slackbridge/" target="_blank" rel="noopener noreferrer">Slack Bridge</a>.</p>
         <p class="theme_type--grey">Migrating from <a class="button--link" href="//rocket.chat/atlassian/" target="_blank" rel="noopener noreferrer">Atlassian?</a> Choose from our two <a class="button--link" href="//rocket.chat/docs/administrator-guides/import/hipchat/" target="_blank" rel="noopener noreferrer">HipChat Importers</a>.</p>
         <p><a href="//rocket.chat/docs/administrator-guides/import/" class="button--link button--with-arrow">Learn more about importing to Rocket.Chat</a></p>
       </div>
@@ -185,7 +194,7 @@ redirect_from:
         </div>
       </div>
 
-      <img class="home-box__image" src="/images/index/enterprise.png" />
+      <img class="home-box__image" src="/images/index/enterprise.svg" />
     </div>
   </div>
 </section>
@@ -202,10 +211,7 @@ redirect_from:
       </div>
 
       <div class="col--third">
-        <img
-          srcset="/images/index/live-chat.png, /images/index/live-chat@2x.png 2x, /images/index/live-chat@3x.png 3x"
-          src="/images/index/live-chat.png" alt="Live Chat"
-        />
+        <img src="/images/index/live-chat.svg" alt="Live Chat"/>
       </div>
     </div>
   </div>
@@ -223,10 +229,7 @@ redirect_from:
       </div>
 
       <div class="col--third">
-        <img
-          srcset="/images/index/translate.png, /images/index/translate@2x.png 2x, /images/index/translate@3x.png 3x"
-          src="/images/index/translate.png" alt="translate translation"
-        />
+        <img src="/images/index/translate.svg" alt="translate translation"/>
       </div>
     </div>
   </div>
@@ -316,7 +319,7 @@ redirect_from:
             <div class="space--075"></div>
             <h2 class="theme_type--space"><strong>Marketplace</strong></h2>
             <p class="theme_type--light">Find and install apps to extend Rocket.Chat or upload and sell an app you have developed.</p>
-            Coming mid-2018.
+            <a target="_blank" href="/marketplace" rel="noopener noreferrer">Find apps now!</a>
           </div>
         </div>
       </div>
@@ -350,16 +353,7 @@ redirect_from:
 
   <div class="flex-grid grid--justify-around align--center">
     <div class="col--haft no-gutter">
-      <p class="label theme_type--grey">Rocket.Chat for all industries</p>
     </div>
-  </div>
-
-  <div class="home-clients">
-    <span><img src="/images/clients/canonical.png" alt="canonical" /></span>
-    <span><img src="/images/clients/steadymd.png" alt="steadymd" /></span>
-    <span><img src="/images/clients/lisk.png" alt="lisk" /></span>
-    <span><img src="/images/clients/aeb.png" alt="aeb" /></span>
-    <span><img src="/images/clients/selu.png" alt="selu" /></span>
   </div>
 
   <div class="space--2"></div>

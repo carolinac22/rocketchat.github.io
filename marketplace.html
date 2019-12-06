@@ -6,24 +6,47 @@ permalink: /marketplace
 redirect_from:
   - /apps/
   - /apps
+  - /marketplace/
 ---
 
 <section class="hero">
   <h1>Connect your favorite Apps</h1>
+  <p class="display--small theme_type--dark">Increase the quality of your team workflow right within Rocket.Chat</p>
   <div class="">
     <input class="search input input--icon-search" type="text" name="" placeholder="Search apps" />
     <ul class="search-results-list"></ul>
   </div>
 </section>
 
+<div class="apps-loading">
+  <img class="loading-spinner" src="/images/spinner.svg" alt="">
+  <p>Loading available Apps, please wait...</p>
+</div>
+
 <div class="container apps-list-container">
-  <div class="flex-grid">
+  <div class="select select--theme-light categories-select">
+    <select>
+      <option value="All Apps">All Apps</option>
+    </select>
+  </div>
+  <div class="flex-container">
     <ul class="links-list col col--fourth">
       <li class="links-list-item">
         <button data-category="" class="app-category-button">All Apps</button>
       </li>
     </ul>
     <section class="col apps-list-wrapper">
+      <div class="apps-disclaimer__container">
+        <div class="apps-disclaimer__wrapper">
+          <img src="/images/marketplace/cube.svg" class="apps-disclaimer__icon" alt="cube">
+          <div class="apps-disclaimer__text">
+            <h3 class="display--small">Installing Apps</h3>
+            <p>See how easy is install an app on Rocket.Chat</p>
+          </div>
+        </div>
+        <!-- TEMPORARY LINK, PLEASE CHANGE WHEN WE HAVE BETTER APPS USER DOCS -->
+        <a class="apps-disclaimer__button button" href="https://rocket.chat/docs/developer-guides/developing-apps/#what-is-a-rocketchat-app">Learn More</a>
+      </div>
       <div class="apps-message-container display-none">
         <div class="message">No results found</div>
         <span class="icon"></span>
@@ -35,7 +58,7 @@ redirect_from:
           <p>Developer? Click <a href="https://rocket.chat/docs/developer-guides/" class="button--link" target="_blank">here</a> get started creating an app</p>
         </div>
       </div>
-      <ul class="apps-list"></ul>
+      <ul class="apps-list grid two-rows"></ul>
     </section>
   </div>
 </div>
@@ -48,8 +71,10 @@ redirect_from:
       <div class="icon"></div>
     </div>
     <div class="content-wrapper">
-      <span class="name"></span>
-      <span class="description"></span>
+      <div class="content">
+        <span class="name"></span>
+        <span class="description"></span>
+      </div>
       <ul class="categories-list"></ul>
     </div>
   </div>
@@ -75,6 +100,4 @@ redirect_from:
   </div>
 </script>
 
-<script src="/jquery.js"></script>
-<script src="/polyfill/clipboard.min.js"></script>
 <script src="/marketplace.js"></script>

@@ -42,36 +42,14 @@ theme: dark
   </div>
 </div>
 
-<section class="press-download js-download container">
+<section class="container">
   <h2 class="display theme_type--dark">In the press</h2>
 
   <div class="space--2"></div>
 
   <div class="blog__related">
-    {% for post in site.data.press %}
-      <a class="card--blog card--blog__image"
-      href="{{ post.url | remove: "index.html" }}"
-      >
-      <div
-        class="card--blog__cover"
-        {% if post.isLogo == true %}
-          {% if post.bgColor %}
-              style="background-image: url('/images/press/{{ post.cover }}'); background-size: contain; background-color: #{{post.bgColor}};"
-          {% endif %}
-            style="background-image: url('/images/press/{{ post.cover }}'); background-size: contain"
-        {% elsif post.cover %}
-            style="background-image: url('/images/press/{{ post.cover }}');"
-        {% else %}
-            style="background-image: url('/images/blog/post.jpg')"
-        {% endif %}
-      ></div>
-      <div class="card--blog__wrap">
-        <p class="card--blog__meta label--small theme_type--grey">
-            {{ post.date | date: "%b %-d, %Y" }}
-        </p>
-        <h3 class="card--blog__title theme_type--dark">{{ post.title }}</h3>
-      </div>
-      </a>
+    {% for post in site.categories.Press %}
+      {% include blog/article-link.html post=post %}
     {% endfor %}
   </div>
 </section>
@@ -99,7 +77,7 @@ theme: dark
             <div class="flex-grid--nobreak">
               <div class="col no-gutter">
                 <div class="select select-download">
-                  <select class="js-select-download" data-target="{{ logo.file }}">
+                  <select class="js-select-download theme_type--dark" data-target="{{ logo.file }}">
                     {% if logo.png %}<option value="/images/press/logos/{{ logo.file }}.png" >PNG</option>{% endif %}
                     {% if logo.svg %}<option value="/images/press/logos/{{ logo.file }}.svg" title="{{ logo.name }} SVG">SVG</option>{% endif %}
                   </select>

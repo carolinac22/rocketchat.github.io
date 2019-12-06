@@ -7,11 +7,19 @@
     - Manual Install
 
 - title: Docker
-  image: /images/install/digital-ocean.png
+  image: /images/install/docker.png
   link: https://rocket.chat/docs/installation/docker-containers/
   tags:
     - Official
     - Docker Container
+
+- title: Digital Ocean
+  image: /images/install/digital-ocean.svg
+  link: https://marketplace.digitalocean.com/apps/rocket-chat?action=deploy&refcode=1940fe28bd31
+  tags:
+    - Official
+    - PaaS
+    - One Click Install
 
 - title: AWS
   image: /images/install/aws.png
@@ -34,12 +42,24 @@
     - Official
     - Manual Install
 
+- title: Univention Corporate Server (UCS)
+  image: /images/install/univention_corporate_server.png
+  link: https://rocket.chat/docs/installation/manual-installation/univention-corporate-server-ucs/
+  tags:
+    - Official
+
 - title: CentOS
   image: /images/install/centos.png
   link: https://rocket.chat/docs/installation/manual-installation/centos/
   tags:
     - Official
     - Manual Install
+
+- title: Oracle
+  image: /images/install/oracle.png
+  link: https://rocket.chat/docs/administrator-guides/authentication/saml/oracle-cloud/#oracle-identity-cloud-service
+  tags:
+    - Official
 
 - title: Cloudron.io
   image: /images/install/cloudron.png
@@ -100,13 +120,6 @@
 - title: OpenShift
   image: /images/install/openshift.png
   link: https://rocket.chat/docs/installation/paas-deployments/openshift/
-  tags:
-    - Official
-    - PaaS
-
-- title: Sandstorm.io
-  image: /images/install/sandstorm.png
-  link: https://rocket.chat/docs/installation/paas-deployments/sandstorm-io/
   tags:
     - Official
     - PaaS

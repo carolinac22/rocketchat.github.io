@@ -19,6 +19,8 @@ theme: dark
 {% assign USATeam = "" | split: "" %}
 {% assign IndiaTeam = "" | split: "" %}
 {% assign GermanyTeam = "" | split: "" %}
+{% assign UkraineTeam = "" | split: "" %}
+{% assign ChinaTeam = "" | split: "" %}
 
 {% for member in teamList %}
   {% if member.country == "Brazil" %}
@@ -41,6 +43,12 @@ theme: dark
 
   {% elsif member.country == "India" %}
     {% assign IndiaTeam = IndiaTeam | push: member %}
+
+  {% elsif member.country == "Ukraine" %}
+    {% assign UkraineTeam = UkraineTeam | push: member %}
+
+  {% elsif member.country == "China" %}
+    {% assign ChinaTeam = ChinaTeam | push: member %}
   {% endif %}
 {% endfor %}
 
@@ -125,6 +133,8 @@ theme: dark
       </div>
     </div>
 
+    <!-- Please uncomment here if we have a new team member from UK -->
+    <!--
     <div class="team-map__pin unitedkingdom">
       <div class="team-map__profile">
         <div class="flags">
@@ -148,6 +158,7 @@ theme: dark
         </p>
       </div>
     </div>
+    -->
 
     <div class="team-map__pin germany">
       <div class="team-map__profile">
@@ -220,7 +231,55 @@ theme: dark
         </p>
       </div>
     </div> -->
+
+    <div class="team-map__pin ukraine">
+      <div class="team-map__profile left">
+        <div class="flags">
+          {% for member in UkraineTeam %}
+            {% if forloop.index <= 5 %}
+              {% if member.photo %}
+                <span><img src="/images/team/member/{{ member.username | replace: '.', '-' }}-01.jpg" alt=""></span>
+              {% else %}
+                <span><img src="/images/team/placeholder.png" alt=""></span>
+              {% endif %}
+            {% endif %}
+
+            {% if forloop.length > 5 and forloop.last %}
+              <span class="count">+{{ forloop.length | minus:5 }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <p>
+          <strong>Ukraine</strong>
+          <span><img src="/images/flags/Ukraine.png" alt="Ukraine" /></span>
+        </p>
+      </div>
+    </div>
   </div>
+
+  <div class="team-map__pin china">
+      <div class="team-map__profile left">
+        <div class="flags">
+          {% for member in ChinaTeam %}
+            {% if forloop.index <= 5 %}
+              {% if member.photo %}
+                <span><img src="/images/team/member/{{ member.username | replace: '.', '-' }}-01.jpg" alt=""></span>
+              {% else %}
+                <span><img src="/images/team/placeholder.png" alt=""></span>
+              {% endif %}
+            {% endif %}
+
+            {% if forloop.length > 5 and forloop.last %}
+              <span class="count">+{{ forloop.length | minus:5 }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <p>
+          <strong>China</strong>
+          <span><img src="/images/flags/China.png" alt="China" /></span>
+        </p>
+      </div>
+    </div>
 </section>
 
 <div class="space--4"></div>
@@ -231,7 +290,7 @@ theme: dark
       <p class="label theme_type--grey"></p>
       <h2 class="display theme_type--dark">About Us</h2>
       <p class="theme_type--grey">Rocket.Chat is more than your average company, we are the leading open source team chat community. When you choose Rocket.Chat, you become part of a global community comprised of a core team, hundreds of open source developers, testers and writers, and millions of users.</p>
-      <p class="theme_type--grey">We are building the future of communication and would love to build it with you. We are often looking for more team members, so check out our <a href="https://rocketchat.recruitee.com"><b>Jobs page</b></a> for opportunities!</p>
+      <p class="theme_type--grey">We are building the future of communication and would love to build it with you. We are often looking for more team members, so check out our <a href="/jobs"><b>Jobs page</b></a> for opportunities!</p>
     </div>
   </div>
 </section>

@@ -16,15 +16,40 @@
 
 # When updating this file locally you might need to restart the jekyll server or delete the "_site" folder to see the changes on your local site.
 
+- title: "Deployment"
+  isHeader: true
+
 - title: "High Scalability Cluster"
   community: ""
-  pro: ""
+  pro: true
+  enterprise: true
+
+- title: "File Storage Migrate Tool"
+  community: ""
+  pro: true
   enterprise: true
 
 - title: "Features"
   isHeader: true
 
-- title: "Unlimited Users"
+- title: "Users"
+  bronze: "Unlimited"
+  silver: "Unlimited"
+  gold: "Unlimited"
+  community: "Recommended 1k"
+  pro: "Unlimited"
+  enterprise: "Unlimited"
+
+
+- title: "Messages History"
+  bronze: "Unlimited"
+  silver: "Unlimited"
+  gold: "Unlimited"
+  community: "Unlimited"
+  pro: "Unlimited"
+  enterprise: "Unlimited"
+
+- title: "Public Channels"
   bronze: true
   silver: true
   gold: true
@@ -32,31 +57,7 @@
   pro: true
   enterprise: true
 
-- title: "Unlimited Messages"
-  bronze: true
-  silver: true
-  gold: true
-  community: true
-  pro: true
-  enterprise: true
-
-- title: "Unlimited Search History"
-  bronze: true
-  silver: true
-  gold: true
-  community: true
-  pro: true
-  enterprise: true
-
-- title: "Unlimited Public Channels"
-  bronze: true
-  silver: true
-  gold: true
-  community: true
-  pro: true
-  enterprise: true
-
-- title: "Unlimited Private Groups"
+- title: "Private Channels"
   bronze: true
   silver: true
   gold: true
@@ -74,7 +75,7 @@
 
 - title: "Conferencing Server"
   bronze: "Shared"
-  silver: "Dedicated"
+  silver: "Shared"
   gold: "Dedicated"
   community: "Shared"
   pro: "Dedicated"
@@ -93,7 +94,7 @@
   pro: "Unlimited"
   enterprise: "Unlimited"
 
-- title: "Multi Language Interface"
+- title: "Multilanguage Interface"
   bronze: true
   silver: true
   gold: true
@@ -101,13 +102,21 @@
   pro: true
   enterprise: true
 
-- title: "Apps iOS, Android, Win, Mac and Linux"
-  bronze: true
-  silver: true
-  gold: true
-  community: true
-  pro: true
-  enterprise: true
+- title: "Desktop Apps"
+  bronze: "Windows, macOS, Linux"
+  silver: "Windows, macOS, Linux"
+  gold: "Windows, macOS, Linux"
+  community: "Windows, macOS, Linux"
+  pro: "Windows, macOS, Linux"
+  enterprise: "Windows, macOS, Linux"
+
+- title: "Mobile Apps"
+  bronze: "Android, iOS"
+  silver: "Android, iOS"
+  gold: "Android, iOS"
+  community: "Android, iOS"
+  pro: "Android, iOS"
+  enterprise: "Android, iOS"
 
 - title: "Custom Domain"
   bronze: ""
@@ -156,9 +165,76 @@
   community: ""
   pro: ""
   enterprise: true
+  
+- title: "Omnichannel"
+  isHeader: true
+  
+- title: "Canned Responses"
+  bronze: ""
+  silver: ""
+  gold: true
+  community: ""
+  pro: ""
+  enterprise: true
+  
+- title: "Agent Utilization Limit"
+  bronze: ""
+  silver: ""
+  gold: true
+  community: ""
+  pro: ""
+  enterprise: true
+  
+- title: "Waiting Queue"
+  bronze: ""
+  silver: ""
+  gold: true
+  community: ""
+  pro: ""
+  enterprise: true
+
+- title: "Supervisor Role"
+  bronze: ""
+  silver: ""
+  gold: true
+  community: ""
+  pro: ""
+  enterprise: true
+  
+- title: "Sub-departments"
+  bronze: ""
+  silver: ""
+  gold: true
+  community: ""
+  pro: ""
+  enterprise: true
+
+- title: "Pre-configured Tags"
+  bronze: ""
+  silver: ""
+  gold: true
+  community: ""
+  pro: ""
+  enterprise: true
+  
+- title: "Advanced Agent Routing Rules"
+  bronze: ""
+  silver: ""
+  gold: true
+  community: ""
+  pro: ""
+  enterprise: true
 
 - title: "Preconfigured Proxy Servers"
   isHeader: true
+
+- title: "Push Notifications"
+  bronze: "Unlimited"
+  silver: "Unlimited"
+  gold: "Unlimited"
+  community: "1000 monthly"
+  pro: "10000 monthly"
+  enterprise: "Unlimited"
 
 - title: "Social Network Login"
   bronze: ""
@@ -203,7 +279,7 @@
   pro: "Hourly"
   enterprise: "Hourly"
 
-- title: "Multi Factor Authentication"
+- title: "Multifactor Authentication"
   bronze: ""
   silver: true
   gold: true
@@ -211,7 +287,7 @@
   pro: true
   enterprise: true
 
-- title: "Customize User Permission"
+- title: "Customizable User Permission"
   bronze: ""
   silver: true
   gold: true
@@ -219,22 +295,13 @@
   pro: true
   enterprise: true
 
-- title: "Real Time Active Directory Sync LDAP"
-  bronze: ""
-  silver: true
-  gold: true
-  community: ""
-  pro: true
-  enterprise: true
-
-- title: "Encrypted Push Notifications"
-  bronze: ""
-  silver: true
-  gold: true
-  community: ""
-  pro: true
-  enterprise: true
-
+- title: "LDAP / Active Directory"
+  bronze: "Basic"
+  silver: "Real Time Sync"
+  gold: "Real Time Sync"
+  community: "Basic"
+  pro: "Real Time Sync"
+  enterprise: "Real Time Sync"
 
 - title: "Engagement Dashboard"
   bronze: ""
@@ -286,38 +353,15 @@
 - title: "Support"
   isHeader: true
 
-- title: "Monitoring and Alerts"
-  bronze: "24/7"
-  silver: "24/7"
-  gold: "24/7"
-  community: true
-  pro: true
-  enterprise: true
-
-- title: "Updates"
-  community: "Regular Releases"
-  pro: "Priority Patches"
-  enterprise: "Priority Patches"
-
-- title: "Reporting"
-  bronze: "Weekly"
-  silver: "Daily"
-  gold: Hourly
-
-- title: "Monthly Uptime SLA"
-  bronze:
-  silver: "99.99%"
-  gold: "99.99%"
+- title: "SLA - Monthly Uptime"
+  bronze: ""
+  silver: "99.9%"
+  gold: "99.9%"
 
 - title: "Backups"
   bronze: "Daily"
   silver: "Twice Daily"
   gold: "Hourly"
-
-- title: "Updates"
-  bronze: "Automatic"
-  silver: "Automatic"
-  gold: "Automatic"
 
 - title: "Online Ticket Creation"
   bronze: true
@@ -327,34 +371,39 @@
   pro: true
   enterprise: true
 
-- title: "Email Support"
+- title: "24/7 Email"
   bronze: true
   silver: true
   gold: true
   community: ""
   pro: true
   enterprise: true
+  
+- title: "24/7 Phone"	
+  bronze: ""	
+  silver: "High Only"	
+  gold: "All tickets"	
+  community: ""	
+  pro: "High Only"	
+  enterprise: "All tickets"	
 
-- title: "24/7 Chat"
-  bronze: ""
-  silver: ""
-  gold: true
+- title: "Support Entitlement"
+  bronze: "Admins"
+  silver: "Admins"
+  gold: "Admins"
   community: ""
-  pro: true
-  enterprise: true
+  pro: "1 Named Contact"
+  enterprise: "3 Named Contacts"
 
-- title: "24/7 Phone"
-  bronze: ""
-  silver: ""
-  gold: true
+- title: "Post-incident Reports"
   community: ""
   pro: ""
   enterprise: true
 
-- title: "SLA - Issue Response Time"
+- title: "SLA - Initial Response Time"
   isHeader: true
 
-- title: "Minimal"
+- title: "Low"
   bronze: "4 business days"
   silver: "2 business days"
   gold: "1 business day"
@@ -362,7 +411,7 @@
   pro: "4 business days"
   enterprise: "1 business day"
 
-- title: "Normal"
+- title: "Medium"
   bronze: "24 hours"
   silver: "12 hours"
   gold: "6 hours"
@@ -370,7 +419,7 @@
   pro: "24 hours"
   enterprise: "6 hours"
 
-- title: "Critical"
+- title: "High (Critical)"
   bronze: "2 hours"
   silver: "1 hour"
   gold: "30 minutes"
@@ -381,12 +430,12 @@
 - title: "Extras"
   isHeader: true
 
-- title: "Onboarding Assistance"
+- title: "Onboarding Call"
   bronze: ""
-  silver: true
+  silver: ""
   gold: true
   community: ""
-  pro: true
+  pro: ""
   enterprise: true
 
 - title: "Migration Assistance"
@@ -394,7 +443,7 @@
   silver: ""
   gold: true
   community: ""
-  pro: ""
+  pro: true
   enterprise: true
 
 - title: "Access to Product Team"
@@ -403,4 +452,17 @@
   gold: true
   community: ""
   pro: ""
+  enterprise: true
+
+- title: "On-Call Upgrade Assistance"
+  community: ""
+  pro: ""
+  enterprise: true
+
+- title: "Atlassian Integration Apps Bundle"
+  bronze: true
+  silver: true
+  gold: true
+  community: ""
+  pro: true
   enterprise: true
