@@ -55,6 +55,27 @@
   }
 }
 
+.app-footer_language {
+  margin-bottom: 16px;
+
+  .language-selector{
+    font-size: 1em;
+    border-radius: 2px;
+    width: 100%;
+    padding: 0.4em 0.6em;
+    font-weight: 500;
+
+    &.dark {
+      background-color: $space-grey;
+      color: #fff;
+    }
+
+    &.light a {
+      background-color: $grey-smoke;
+    }
+  }
+}
+
 .app-footer_social {
   .social_icons {
     display: flex;
