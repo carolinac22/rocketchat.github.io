@@ -1,8 +1,9 @@
 ---
 title: "Rocket.Chat News, Gabriel talks about Omnichannel and Performance Improvements, plus New Features in our new 2.2.0 release"
 categories:
-- Newsletters
+- Videos
 date: 2019-10-23 12:00:00
+videoURL: https://www.youtube.com/embed/zyMzjVcomtE
 author: Marti Stephen
 cover: /images/blog/rockets/1.jpg
 featured: false
@@ -19,6 +20,7 @@ First off is an important reminder to check your engine version before running R
 ## New Features
 
 Let’s move on to new features. Rocket.Chat now allows avatars to accept GIFs and SVGs. We convert them to PNGs so you can preserve the transparent image backgrounds.
+webinarURL: https://www.youtube.com/embed/wbm_QIWTTgU
 
 We’ve got good news for those of you searching for files you’ve shared on the channel, whether you’re looking for pictures, movies, pdfs, whatever. You can find them more easily now because we’ve  added a file-type filter to Room Files. You’ll see a dropdown to help you search by file type. Thanks to [@juanpetterson](https://github.com/juanpetterson) on that one.
 
