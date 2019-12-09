@@ -1,7 +1,7 @@
 ---
 title: "AMA webinar, Gabriel talks about our future and our new 2.0 release"
 categories:
-- Product
+- Newsletters
 date: 2019-09-27 12:00:00
 author: Marti Stephen
 cover: /images/blog/rockets/6.jpg
