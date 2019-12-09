@@ -1,14 +1,4 @@
 {% assign tg = site.data.i18n-general[include.lang] %}
-<script>
-var changeLang = function () {
-  var lang = this.value
-  var url = window.location.href
-  if (lang === 'en') {
-    url.replace('/pt', '');
-  }2
-  location = url;
-}
-</script>
 <footer class="app-footer {% if page.theme == 'light' %}app-footer--light{% elsif page.theme == 'dark' %}app-footer--black{% endif %}">
     <div class="container">
 
@@ -86,19 +76,19 @@ var changeLang = function () {
         <div class="app-footer_language">
             <h2 class="app-footer_title">{{tg.language}}</h2>
             <select class="select language-selector {{page.theme}}" onchange="
-              var lang = this.value
-              var url = window.location.href
+              var lang = this.value;
+              var url = window.location.href;
               if (lang === 'en') {
-                url = url.replace('/pt', '')
+                url = url.replace('/pt', '');
               } else if (lang === 'pt') {
                 if (!url.includes('/pt')) {
-                  url = url+'/pt'
+                  url = url+'/pt';
                 }
-              }
-              location = url
-              ;">
+              };
+              location = url;
+              ">
               <option value="en">🇺🇸 English</option>
-              <option value="pt" {% if include.lang == 'pt' % } selected {% endif %} >🇧🇷 Português</option>
+              <option value="pt" {% if include.lang == 'pt' %} selected {% endif %} >🇧🇷 Português</option>
             </select>
         </div>
         {% endif %}
