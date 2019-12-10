@@ -5,7 +5,7 @@ categories:
 date: 2019-10-23 12:00:00
 videoURL: https://www.youtube.com/embed/zyMzjVcomtE
 author: Marti Stephen
-cover: /images/blog/rockets/1.jpg
+cover: /images/blog/news-video.png
 featured: false
 ---
 
@@ -31,12 +31,12 @@ We know that people often have to import conversations from other systems, inclu
 Omnichannel is a useful feature that allows external customers to communicate with agents on your server. Essentially it is a Livechat with alternate social network and messaging integration streams.
 
 Omnichannel agents can look forward to several new features that solve some current issues and make them considerably more productive.
- 
+
 As you know, agents can sometimes collect a lot of closed Livechat conversations on the sidebar by the end of the day. Now we’re providing a button that will remove all of the closed Livechat conversations at once. Simple, clean, and elegant, thanks to [@knrt10](https://github.com/knrt10).
 
-Up until now, the Omnichannel router has been preventing new conversations from reaching agents while their status is away or idle. You can now turn that feature off, so that these conversations reach you. 
+Up until now, the Omnichannel router has been preventing new conversations from reaching agents while their status is away or idle. You can now turn that feature off, so that these conversations reach you.
 
-As we noticed the frequent requests for better integration between Omnichannel and external BOTs, we are allowing you to automatically assign new conversations to bot agents first. This feature also allows the bot agent to return the conversation to the queue if it cannot resolve the conversation. 
+As we noticed the frequent requests for better integration between Omnichannel and external BOTs, we are allowing you to automatically assign new conversations to bot agents first. This feature also allows the bot agent to return the conversation to the queue if it cannot resolve the conversation.
 
 ## Performance Improvements
 
@@ -46,4 +46,4 @@ As we’re sure you’ve noticed, we are incrementally migrating from Blaze to R
 
 The Administration area is being replaced next, and other areas will follow. When you see an area that’s been changed, please help us battle test it and confirm it’s still working as intended. Thank you!
 
-To see more about the latest improvements, and also to hear about the latest bug fixes, you can check out the full October [News Video](https://youtu.be/zyMzjVcomtE) and [Webinar](https://youtu.be/Akf0COYymns). Also, please use our [question collection channel](https://open.rocket.chat/channel/ask-gabriel-anything) to post any questions you may have about the Rocket.Chat vision. 
+To see more about the latest improvements, and also to hear about the latest bug fixes, you can check out the full October [News Video](https://youtu.be/zyMzjVcomtE) and [Webinar](https://youtu.be/Akf0COYymns). Also, please use our [question collection channel](https://open.rocket.chat/channel/ask-gabriel-anything) to post any questions you may have about the Rocket.Chat vision.
