@@ -58,6 +58,7 @@ en:
 
   marketplace_title: Marketplace
   marketplace_description: Find and install apps to extend Rocket.Chat or upload and sell an app you have developed.
+  marketplace_find: Find apps now!
 
 
 
@@ -70,7 +71,7 @@ pt:
   home-landingpage_title: Substitua o Email
   home-landingpage_description_1: Abra a conversa e remova a necessidade de CC / BCC usando Canais e Grupos Privados para falar com sua equipe abertamente para obter maior transparência.
   home-landingpage_description_2: Inclua participantes relevantes com a menção @username para notificá-los imediatamente. Para anúncios importantes para todos os membros de um grupo, use @all. O histórico completo de chat permite que os membros participem e saiam a qualquer momento.
-  home-landingpage2_title: Team Chat
+  home-landingpage2_title: Chat em Equipe
   home-landingpage2_description_1: Comunique-se e colabore usando chat em equipe e alterne para chamadas de vídeo ou áudio com screensharing para um trabalho mais eficiente.
   home-landingpage2_description_2: Melhore a produtividade discutindo e compartilhando idéias, projetos e arquivos no chat em tempo real ou assíncrono.
   home-landingpage3_title: O que é Rocket.Chat?
@@ -121,3 +122,4 @@ pt:
 
   marketplace_title: Marketplace
   marketplace_description: Encontre e instale Apps para estender o Rocket.Chat ou faça upload e venda de um Apps que você desenvolveu.
+  marketplace_find: Encontre Apps Agora!
