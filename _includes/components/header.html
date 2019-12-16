@@ -6,8 +6,8 @@
       <div class="container">
         <h1 class="app-header_logo">
           <a href="/">
-            <img class="dark" src="/images/default/logo--dark.svg" alt="Rocket.Chat">
-            <img class="normal" src="/images/default/logo.svg" alt="Rocket.Chat">
+            <img class="dark" src="{{site.url}}/images/default/logo--dark.svg" alt="Rocket.Chat">
+            <img class="normal" src="{{site.url}}/images/default/logo.svg" alt="Rocket.Chat">
           </a>
         </h1>
 
@@ -34,7 +34,7 @@
             <li><a {% if page.class == 'blog' %}class="current-page"{%endif%} href="/blog/">Blog</a></li>
             <li><a {% if page.class == 'contact' %}class="current-page"{%endif%} href="/contact">{{tg.contact}}</a></li>
           </ul>
-          <a id="try-now" class="app-header_install" href="//cloud.rocket.chat/trial/bronze"><span><img src="/images/default/cloud.svg" alt="Install"></span> {{tg.try-now}}</a>
+          <a id="try-now" class="app-header_install" href="//cloud.rocket.chat/trial/bronze"><span><img src="{{site.url}}/images/default/cloud.svg" alt="Install"></span> {{tg.try-now}}</a>
         </nav>
 
       </div>
