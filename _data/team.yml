@@ -304,3 +304,11 @@
   username: jose.naranjo
   photo: yes
   country: Ecuador
+  
+- name: Eduarda Cunha
+  role: Frontend Developer
+  department: Technology
+  github_username: mariaeduardacunha
+  username: eduarda.cunha
+  photo: yes
+  country: Brazil
