@@ -296,8 +296,16 @@
   username: rogerio.saboia
   photo: yes
   country: Brazil
-
-  name: Eduarda Cunha
+  
+- name: José Naranjo
+  role: Market Development Representative
+  department: Sales
+  github_username: josenaranjo1408
+  username: jose.naranjo
+  photo: yes
+  country: Ecuador
+  
+- name: Eduarda Cunha
   role: Frontend Developer
   department: Technology
   github_username: mariaeduardacunha
