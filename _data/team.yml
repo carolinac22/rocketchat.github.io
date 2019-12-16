@@ -296,7 +296,7 @@
   username: rogerio.saboia
   photo: yes
   country: Brazil
-  
+
 - name: José Naranjo
   role: Market Development Representative
   department: Sales
@@ -312,3 +312,9 @@
   username: eduarda.cunha
   photo: yes
   country: Brazil
+
+- name: Gabriel Henriques
+  role: Front End Developer
+  department: Technology
+  github_username: gabriellsh
+  username: gabriel.henriques
