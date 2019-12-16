@@ -11,7 +11,7 @@
 - name: Rodrigo Nascimento
   role: CTO
   github_username: rodrigok
-  department: Technology
+  department: c
   username: rodrigo.nascimento
   photo: yes
   country: Brazil
@@ -294,5 +294,13 @@
   department: Operations
   github_username: rsjr
   username: rogerio.saboia
+  photo: yes
+  country: Brazil
+
+  name: Eduarda Cunha
+  role: Frontend Developer
+  department: Technology
+  github_username: mariaeduardacunha
+  username: eduarda.cunha
   photo: yes
   country: Brazil
