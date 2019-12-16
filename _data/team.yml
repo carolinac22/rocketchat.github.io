@@ -296,3 +296,11 @@
   username: rogerio.saboia
   photo: yes
   country: Brazil
+  
+- name: José Naranjo
+  role: Market Development Representative
+  department: Sales
+  github_username: josenaranjo1408
+  username: jose.naranjo
+  photo: yes
+  country: Ecuador
