@@ -245,7 +245,7 @@
   github_username: djorkaeffalexandre
   github_uid: 29778115
   username: djorkaeff.alexandre
-  photo: no
+  photo: yes
   country: Brazil
 
 - name: Eduardo Pereira
@@ -296,7 +296,7 @@
   username: rogerio.saboia
   photo: yes
   country: Brazil
-  
+
 - name: José Naranjo
   role: Market Development Representative
   department: Sales
@@ -304,3 +304,19 @@
   username: jose.naranjo
   photo: yes
   country: Ecuador
+  
+- name: Eduarda Cunha
+  role: Frontend Developer
+  department: Technology
+  github_username: mariaeduardacunha
+  username: eduarda.cunha
+  photo: yes
+  country: Brazil
+
+- name: Gabriel Henriques
+  role: Front End Developer
+  department: Technology
+  github_username: gabriellsh
+  username: gabriel.henriques
+  photo: yes
+  country: Brazil
