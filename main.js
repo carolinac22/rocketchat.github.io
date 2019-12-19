@@ -153,7 +153,8 @@ if (document.querySelector(".js-download")) {
 
 $(document).ready(function() {
   var path = window.location.pathname;
-  if (path == '/pricing' || path == '/pricing/') {
+  if (path == '/pricing' || path == '/pricing/' || path == '/pricing.html') {
+    $('.pricing .button.trial.contact').featherlight($('#pricing-form'), { 'persist' : 'shared' });
     if (window.location.hash.substr(1) == "cloud") {
       $('.switch').removeClass('active');
       $(".cloud").addClass(' active');
