@@ -297,6 +297,14 @@
   photo: yes
   country: Brazil
 
+  name: Ivan Netto
+  role: Designer
+  department: Product
+  github_username: ivans-netto
+  username: ivan.netto
+  photo: yes
+  country: Brazil
+
 - name: José Naranjo
   role: Market Development Representative
   department: Sales
