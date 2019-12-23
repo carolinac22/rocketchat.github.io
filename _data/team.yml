@@ -313,6 +313,14 @@
   photo: yes
   country: Ecuador
   
+- name: Karina Monarkh
+  role: Support Analyst
+  department: Operations
+  github_username: monarkh-karina
+  username: karina.monarkh
+  photo: yes
+  country: Ukraine
+  
 - name: Eduarda Cunha
   role: Frontend Developer
   department: Technology
