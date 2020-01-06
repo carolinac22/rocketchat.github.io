@@ -66,28 +66,30 @@ theme: dark
 
             <div id='crmWebToEntityForm'>
               <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
-              <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2982481000005918007 method='POST'
-                onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2982481000005918007()' accept-charset='UTF-8' id="parter-form" class="form-validate">
+              <form action='https://crm.zoho.com/crm/WebForm' name=WebForm2982481000011917128 method='POST'
+                onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2982481000011917128()'
+                accept-charset='UTF-8'>
                 <input type='text' style='display:none;' name='xnQsjsdp'
                   value='96b118485996dc2547c37fc8650b520a7e1d58b5d470b1390a3f560ed46df03b'></input>
                 <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
                 <input type='text' style='display:none;' name='xmIwtLD'
-                  value='8ea917c61ae7f2f107ac548ac534375c880341bed6f94551c0bfb2e5cc03cf66'></input>
-                <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
-                <input type='text' style='display:none;' name='returnURL' value='https://rocket.chat/become-partner#thank-you'> </input>
+                  value='8ea917c61ae7f2f107ac548ac534375cef25f20d45fac528cf9ad6d8d79a240f'></input>
+                <input type='text' style='display:none;' name='actionType' value='Q3VzdG9tTW9kdWxlOA=='></input>
+                <input type='text' style='display:none;' name='returnURL'
+                  value='https://rocket.chat/become-partner#thank-you'></input>
                 <!-- Do not remove this code. -->
 
 
                 <fieldset>
-                  <label class="label--small theme_type--grey" for="Company">Company</label>
-                  <input required minlength="3" maxlength="100" class="input input--dark" type="text" id="company" name="Company"
-                    placeholder="Type company name" />
+                  <label class="label--small theme_type--grey" for="NAME">Company</label>
+                  <input required minlength="3" maxlength="100" class="input input--dark" type="text" id="company"
+                    name="NAME" placeholder="Type company name" />
                 </fieldset>
 
                 <fieldset>
-                  <label class="label--small theme_type--grey" for="Country">Country</label>
+                  <label class="label--small theme_type--grey" for="COBJ8CF9">Office Country</label>
                   <div class="select select--theme-dark">
-                    <select required id="country" name="Country">
+                    <select required id="country" name="COBJ8CF9">
                       <option selected disabled value="">Select Country</option>
                       {% include select-countries.html %}
                     </select>
@@ -95,43 +97,22 @@ theme: dark
                 </fieldset>
 
                 <fieldset>
-                  <label class="label--small theme_type--grey" for="Industry">Industry</label>
+                  <label class="label--small theme_type--grey" for="COBJ8CF11">Expertise</label>
                   <div class="select select--theme-dark">
-                    <select required name="Industry">
-                      <option selected disabled value="">Select industry type</option>
-                      <option value="Blockchain">Blockchain</option>
-                      <option value="Consulting">Consulting</option>
-                      <option value="Consumer&#x20;Goods">Consumer Goods</option>
-                      <option value="Entertainment">Entertainment</option>
-                      <option value="Education">Education</option>
-                      <option value="Financial&#x20;Services">Financial Services</option>
-                      <option value="Government">Government</option>
-                      <option value="Games">Games</option>
-                      <option value="Help&#x20;Center">Help Center</option>
-                      <option value="Healthcare&#x2f;Pharmaceutical">Healthcare&#x2f;Pharmaceutical</option>
-                      <option value="Insurance">Insurance</option>
-                      <option value="Logistics">Logistics</option>
-                      <option value="Manufacturing">Manufacturing</option>
-                      <option value="Public&#x20;Relations">Public Relations</option>
-                      <option value="Religious">Religious</option>
-                      <option value="Real&#x20;State">Real State</option>
-                      <option value="Retail">Retail</option>
-                      <option value="Non-profit">Non-profit</option>
-                      <option value="Community">Community</option>
-                      <option value="Social&#x20;network">Social network</option>
-                      <option value="Technology&#x20;Provider">Technology Provider</option>
-                      <option value="Technology&#x20;Services">Technology Services</option>
-                      <option value="Telecom">Telecom</option>
-                      <option value="Tourism">Tourism</option>
-                      <option value="Other">Other</option>
+                    <select required name="COBJ8CF11">
+                      <option value='software&#x20;factory'>Software Factory</option>
+                      <option value='omnichannel'>Omnichannel</option>
+                      <option value='collaboration&#x20;products'>Collaboration Products</option>
+                      <option value='devops'>Devops</option>
+                      <option value='infrastructure'>Infrastructure</option>
                     </select>
                   </div>
                 </fieldset>
 
                 <fieldset>
-                  <label class="label--small theme_type--grey" for="LEADCF4">No. of Employees</label>
+                  <label class="label--small theme_type--grey" for="COBJ8CF15">No. of Employees</label>
                   <div class="select select--theme-dark">
-                    <select style='width:100%;box-sizing:border-box;' name='LEADCF4'>
+                    <select style='width:100%;box-sizing:border-box;' name='COBJ8CF15'>
                       <option selected disabled value=''>Number of Employees</option>
                       <option value='1-100'>1-100</option>
                       <option value='101-500'>101-500</option>
@@ -143,29 +124,24 @@ theme: dark
                 </fieldset>
 
                 <fieldset>
-                  <label class="label--small theme_type--grey" for="Website">Website</label>
+                  <label class="label--small theme_type--grey" for="COBJ8CF51">Sales Team Size</label>
+                  <input class="input input--dark" type="text" id="firstName" name="COBJ8CF51"
+                    placeholder="Type the Sales Team Size" />
+                </fieldset>
+
+                <fieldset>
+                  <label class="label--small theme_type--grey" for="COBJ8CF111">Contact Name</label>
+                  <input class="input input--dark" type="text" id="firstName" name="COBJ8CF111"
+                    placeholder="Type the contact name" />
+                </fieldset>
+
+                <fieldset>
+                  <label class="label--small theme_type--grey" for="COBJ8CF16">Website</label>
                   <div data-prefix="https://" class="input-child input-child--dark">
-                    <input type="text" id="Website" name="website"
+                    <input type="text" id="Website" name="COBJ8CF16"
                       pattern="[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)"
                       placeholder="Type website" />
                   </div>
-                </fieldset>
-
-                <fieldset>
-                  <label class="label--small theme_type--grey" for="First Name">First Name</label>
-                  <input class="input input--dark" type="text" id="firstName" name="First Name" placeholder="Type first name" />
-                </fieldset>
-
-                <fieldset>
-                  <label class="label--small theme_type--grey" for="Last Name">Last Name</label>
-                  <input required minlength="3" class="input input--dark" type="text" id="lastname" name="Last Name"
-                    placeholder="Type last name" />
-                </fieldset>
-
-                <fieldset>
-                  <label class="label--small theme_type--grey" for="Designation">Job title</label>
-                  <input required minlength="3" class="input input--dark" type="text" id="title" name="Designation"
-                    placeholder="Type job title" />
                 </fieldset>
 
                 <fieldset>
@@ -175,9 +151,9 @@ theme: dark
                 </fieldset>
 
                 <fieldset>
-                  <label class="label--small theme_type--grey" for="LEADCF11">Partnership interest</label>
+                  <label class="label--small theme_type--grey" for="COBJ8CF13">Partnership interest</label>
                   <div class="select select--theme-dark">
-                    <select required id="partnershipInterest" name="LEADCF11">
+                    <select required id="partnershipInterest" name="COBJ8CF13">
                       <option selected disabled value="">Select partnership type</option>
                       <option value='Reseller'>Reseller</option>
                       <option value='ISV&#x2f;OEM'>ISV&#x2f;OEM</option>
@@ -186,20 +162,45 @@ theme: dark
                 </fieldset>
 
                 <fieldset>
-                  <label class="label--small theme_type--grey" for="LEADCF7">Have you already used
-                    Rocket.Chat for a project?</label>
+                  <label class="label--small theme_type--grey" for="COBJ8CF12">Target Market</label>
                   <div class="select select--theme-dark">
-                    <select required id="relationshipDescription" name="LEADCF7">
-                      <option default disabled value="">Select an option</option>
-                      <option value="Yes">Yes</option>
-                      <option value="No">No</option>
+                    <select required id="partnershipInterest" name="COBJ8CF12">
+                      <option selected disabled value='-None-'>-None-</option>
+                      <option value='Small&#x20;or&#x20;Medium'>Small or Medium</option>
+                      <option value='Large'>Large</option>
+                      <option value='Huge'>Huge</option>
                     </select>
                   </div>
                 </fieldset>
 
+                <fieldset>
+                  <label class="label--small theme_type--grey question" for="COBJ8CF111">Tell us more about your
+                    business</label>
+                  <textarea class="input input--dark" type="text" id="tell-us-more" name="COBJ8CF111"
+                    placeholder="Type Here"></textarea>
+                </fieldset>
+
+                <fieldset>
+                  <label class="label--small theme_type--grey" for="captcha">Captcha</label>
+                  <img id='imgid'
+                    src='https://crm.zoho.com/crm/CaptchaServlet?formId=8ea917c61ae7f2f107ac548ac534375cef25f20d45fac528cf9ad6d8d79a240f&grpid=96b118485996dc2547c37fc8650b520a7e1d58b5d470b1390a3f560ed46df03b'>
+                </fieldset>
+
+                <fieldset>
+                  <label class="label--small theme_type--grey" for="repeatcaptcha">Repeat captcha</label>
+                  <input type='text' class="input input--dark" maxlength='10' id="repeatcaptcha" name='enterdigest' />
+                </fieldset>
+
+
                 <fieldset style="display: none">
                   <select name='Lead Status'>
                     <option selected value='Not&#x20;Qualified'>Not Qualified</option>
+                  </select>
+                </fieldset>
+
+                <fieldset style="display: none">
+                  <select style='width:100%;box-sizing:border-box;' name='COBJ8CF14'>
+                    <option selected value='Qualification'>Qualification</option>
                   </select>
                 </fieldset>
 
@@ -219,14 +220,23 @@ theme: dark
 
 
                 <script>
-                  var mndFileds = new Array('First Name', 'Last Name', 'Company', 'Lead Status', 'Lead Source', 'Email');
-                  var fldLangVal = new Array('First Name', 'Last Name', 'Company', 'Lead Status', 'Lead Source', 'Email');
+                  var mndFileds = new Array('NAME', 'COBJ8CF9', 'COBJ8CF6', 'COBJ8CF51', 'COBJ8CF11', 'COBJ8CF111', 'COBJ8CF16', 'Email');
+                  var fldLangVal = new Array('Company', 'Offices Countries', 'Industry', 'Sales Team Size', 'Expertise', 'Contact name', 'Website', 'Email address');
                   var name = '';
                   var email = '';
 
-                  function checkMandatory2982481000005918007() {
+                  /* Do not remove this code. */
+                  function reloadImg() {
+                    if (document.getElementById('imgid').src.indexOf('&d') !== -1) {
+                      document.getElementById('imgid').src = document.getElementById('imgid').src.substring(0, document.getElementById('imgid').src.indexOf('&d')) + '&d' + new Date().getTime();
+                    } else {
+                      document.getElementById('imgid').src = document.getElementById('imgid').src + '&d' + new Date().getTime();
+                    }
+                  }
+
+                  function checkMandatory2982481000011917128() {
                     for (i = 0; i < mndFileds.length; i++) {
-                      var fieldObj = document.forms['WebToLeads2982481000005918007'][mndFileds[i]];
+                      var fieldObj = document.forms['WebForm2982481000011917128'][mndFileds[i]];
                       if (fieldObj) {
                         if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
                           if (fieldObj.type == 'file') {
@@ -259,6 +269,13 @@ theme: dark
                     }
                     document.getElementById('formsubmit').disabled = true;
                   }
+                </script>
+                <input type='hidden' name='eo' value='14f4ec16431e0686150daa43f3210513' /> <input type='hidden'
+                  name='te' value='true' /><img
+                  id='tr_img_8ea917c61ae7f2f107ac548ac534375cef25f20d45fac528cf9ad6d8d79a240f'
+                  src='https://crm.zohopublic.com/crm/WebFormAnalyticsServlet?rid=8ea917c61ae7f2f107ac548ac534375cef25f20d45fac528cf9ad6d8d79a240fgid96b118485996dc2547c37fc8650b520a7e1d58b5d470b1390a3f560ed46df03bgida378f81585080d3b6fb1acbec6638b71gid0553f79ba9ccf83e1be97f6851b4205de08cc9473a5b14b2ff2ed46fe9bdce4agid14f4ec16431e0686150daa43f3210513'
+                  style='display: none;' />
+                <script> if (typeof wfTRKey == 'undefined') { wfTRKey = {}; } wfTRKey['url_8ea917c61ae7f2f107ac548ac534375cef25f20d45fac528cf9ad6d8d79a240f'] = 'https://crm.zohopublic.com/crm/WebFormAnalyticsServlet?rid=8ea917c61ae7f2f107ac548ac534375cef25f20d45fac528cf9ad6d8d79a240fgid96b118485996dc2547c37fc8650b520a7e1d58b5d470b1390a3f560ed46df03bgid364f49863aa1c6f080988c8e111a90b8gid0553f79ba9ccf83e1be97f6851b4205de08cc9473a5b14b2ff2ed46fe9bdce4agid14f4ec16431e0686150daa43f3210513'; wfTRKey['rs_8ea917c61ae7f2f107ac548ac534375cef25f20d45fac528cf9ad6d8d79a240f'] = false; function sf(ev) { var te = ev.target ? ev.target : ev.srcElement; var nd = te.nodeName ? te.nodeName.toLowerCase() : ''; var fm; if (te.form) { fm = te.form.elements.xmIwtLD.value; } if (fm && !wfTRKey['rs_' + fm] && ((nd == 'input' && te.type != 'file') || (nd == 'input' && te.type == 'file' && ev.type == 'click') || nd == 'select' || nd == 'textarea' || nd == 'div')) { document.getElementById('tr_img_' + fm).setAttribute('src', wfTRKey['url_' + fm]); wfTRKey['rs_' + fm] = true } } if (document.addEventListener) { document.addEventListener('click', sf); document.addEventListener('change', sf); } else { document.attachEvent('onclick', sf); document.attachEvent('onchange', sf); }
                 </script>
               </form>
             </div>
