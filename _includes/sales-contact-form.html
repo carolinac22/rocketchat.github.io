@@ -13,8 +13,9 @@
         <input type='text' style='display:none;' name='returnURL' value='https://rocket.chat/contact#thank-you'>
         </input>
 
-    <input type='hidden' name='Lead Source' id="lead-source" value='{{include.form-category}}' />
-    <input type='hidden' name='Lead Status' value='Not Qualified' />
+        <input type='hidden' name='Lead Source' id="lead-source" value='Website Form' />
+        <input type='hidden' name='LEADCF3' id="website-form" value='{{include.form-category}} at {{page.url}}' />
+        <input type='hidden' name='Lead Status' value='Not Qualified' />
 
     <input type='hidden' name='eo' value='14f4ec16431e0686150daa43f3210513'/>
     <input type='hidden' name='te' value='true'/>
