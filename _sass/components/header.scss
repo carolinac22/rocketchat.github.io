@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   transition: all 0.3s ease;
-  z-index: 9999;
+  z-index: 80;
   background-color: $space;
 
   .container {
@@ -50,7 +50,7 @@
   top: 4.5em;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 80;
   height: 0;
   padding: 0 3em 0;
   transition: all 0.3s ease;

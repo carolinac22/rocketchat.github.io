@@ -200,6 +200,9 @@ fieldset {
 // featherlight
 
 
+.featherlight {
+  z-index: 100 !important;
+}
 
 body.light .featherlight.featherlight-form .featherlight-content {
   background: #fff;
