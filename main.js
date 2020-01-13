@@ -165,9 +165,14 @@ $(document).ready(function() {
 
   if(window.location.hash.substring(1) === 'thank-you' && $.featherlight) {
     $.featherlight($('#solution-form__after-box'));
-  } else {
-    // Fragment doesn't exist
   }
+
+  $('#partners-popup').featherlight({
+    afterOpen: function(event){
+        $('.g-recaptcha').empty()
+        $.getScript("https://www.google.com/recaptcha/api.js");
+    }
+  });
 })
 
 $('.switch').on('click', function () {
