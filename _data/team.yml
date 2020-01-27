@@ -312,7 +312,7 @@
   username: jose.naranjo
   photo: yes
   country: Ecuador
-  
+
 - name: Karina Monarkh
   role: Support Analyst
   department: Operations
@@ -320,7 +320,7 @@
   username: karina.monarkh
   photo: yes
   country: Ukraine
-  
+
 - name: Eduarda Cunha
   role: Frontend Developer
   department: Technology
@@ -336,3 +336,10 @@
   username: gabriel.henriques
   photo: yes
   country: Brazil
+
+- name: Paris Dufrayer
+  role: Head of Sales EMEA Region
+  department: Sales
+  username: paris.dufrayer
+  photo: yes
+  country: Spain
