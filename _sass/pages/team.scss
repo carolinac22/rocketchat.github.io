@@ -165,7 +165,7 @@
       transform: translate(1.5em, -2em);
 
       &:after {
-        left: -9px;
+        left: -10px;
       }
     }
   }
@@ -192,7 +192,11 @@
 
     .team-map__profile {
       animation: 1s 1.8s appearsBox forwards;
-      transform: translate(-6.5em, -2em);
+      transform: translate(-7.5em, -2em);
+
+      &:after {
+        left: 103px;
+      }
     }
   }
 }
@@ -305,6 +309,7 @@
     img {
       width: 1.5em;
       margin-left: 0.7em;
+      max-width: 1.5em;
     }
   }
 }
