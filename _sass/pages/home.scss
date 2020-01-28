@@ -628,3 +628,13 @@ body .featherlight .featherlight-content > #youtube-link {
     transition: opacity 2s;
   }
 }
+
+#temporary-banner {
+  display: none;
+}
+
+.featherlight-content #temporary-banner {
+  display: block;
+  background-color: #fff;
+  padding: 24px;
+}
