@@ -23,6 +23,12 @@
     min-height: unset !important;
   }
 
+  &-cloud-message {
+    display: none;
+    flex-direction: column;
+    font-weight: 600;
+  }
+
   &-concession{
     background-image: url("/images/press/hero@2x.jpg");
     background-size: auto 100%;
@@ -110,7 +116,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top: -360px;
+  margin-top: -216px;
 
   @media screen and (max-width: $tablet) {
     flex-direction: column;
