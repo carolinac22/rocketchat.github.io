@@ -1,3 +1,14 @@
+---
+layout: en/legal
+title: Guidelines for Law Enforcement
+class: legal
+permalink: /guidelines-law-enforcement
+type: guidelines-law-enforcement
+theme: light
+redirect_from:
+  - /guidelines-law-enforcement/
+---
+
 # Guidelines for Law Enforcement
 
 These guidelines are intended for law enforcement authorities seeking information about Rocket.Chat accounts. More general information is available in our [Privacy Policy](https://rocket.chat/privacy) and [Terms of Service](https://rocket.chat/terms).
