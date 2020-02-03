@@ -15,6 +15,10 @@ wpm: 160
 # set default template for posts
 defaults:
   - scope:
+      path: ""
+    values:
+      lang: en
+  - scope:
       type: posts
     values:
       layout: post
