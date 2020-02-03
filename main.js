@@ -153,20 +153,27 @@ if (document.querySelector(".js-download")) {
 
 $(document).ready(function() {
   var path = window.location.pathname;
-  if (path == '/pricing' || path == '/pricing/') {
+  if (path == '/pricing' || path == '/pricing/' || path == '/pricing.html') {
+    $('.pricing .button.trial.contact').featherlight($('#sales-contact-form-wrap'), { 'persist' : 'shared' });
     if (window.location.hash.substr(1) == "cloud") {
       $('.switch').removeClass('active');
       $(".cloud").addClass(' active');
       $('.cloud__container').css("display","block");
+      $('.pricing-cloud-message').css("display","flex");
       $('.self-managed__container').css("display","none");
     }
   }
 
   if(window.location.hash.substring(1) === 'thank-you' && $.featherlight) {
     $.featherlight($('#solution-form__after-box'));
-  } else {
-    // Fragment doesn't exist
   }
+
+  $('#partners-popup').featherlight({
+    afterOpen: function(event){
+        $('.g-recaptcha').empty()
+        $.getScript("https://www.google.com/recaptcha/api.js");
+    }
+  });
 })
 
 $('.switch').on('click', function () {
@@ -176,9 +183,11 @@ $('.switch').on('click', function () {
   if ($(this).hasClass('cloud')){
     $('.cloud__container').css("display","block");
     $('.self-managed__container').css("display","none");
+    $('.pricing-cloud-message').css("display","flex");
   } else if ($(this).hasClass('self-managed')){
     $('.cloud__container').css("display","none");
     $('.self-managed__container').css("display","block");
+    $('.pricing-cloud-message').css("display","none");
   }
 })
 
@@ -242,7 +251,7 @@ function showSlides() {
 }
 
 $('.pricing .button.trial.contact').on('click', function (e) {
-  setTimeout(function(){ $('.pricing .featherlight #solution').attr('value', `Pricing ${e.target.dataset.label}`); }, 500);
+  setTimeout(function(){ $('.pricing .featherlight #website-form').attr('value', `Pricing ${e.target.dataset.label}`); }, 500);
 });
 
 $(function() {

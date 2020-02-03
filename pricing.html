@@ -26,7 +26,13 @@ redirect_from:
       <div class="switch-container">
         <a class="switch self-managed active" href="#self">Self-Managed</a>
         <a class="switch cloud" href="#cloud">Cloud</a>
-        </div>
+      </div>
+      <div class="space--2"></div>
+      <div class="pricing-cloud-message">
+        <p class="display--medium theme_type--dark">SaaS offering hosted by Rocket.Chat</p>
+        <p class="display--medium theme_type--dark">Try Rocket.Chat Cloud for 14 days</p>
+        <p class="display--medium theme_type--dark">No credit card required</p>
+      </div>
       </div>
     </div>
   </div>
@@ -86,7 +92,7 @@ redirect_from:
           <br />
         </div>
         <footer>
-          <a href="#" class="button trial contact" data-featherlight="#pricing-form" data-featherlight-persist="true" data-label="Cloud Gold" rel="noopener noreferrer">Contact Us</a>
+          <a href="#" class="button trial contact" data-featherlight="#sales-contact-form-wrap" data-featherlight-variant="featherlight-form" data-label="Cloud Gold" rel="noopener noreferrer">Contact Us</a>
         </footer>
       </div>
 
@@ -97,8 +103,8 @@ redirect_from:
       <thead>
         <tr>
           <th>Community</th>
-          <th>Pro</th>
-          <th>Enterprise</th>
+          <th>Pro**</th>
+          <th>Enterprise**</th>
         </tr>
       </thead>
     {% endcapture %}
@@ -199,7 +205,6 @@ redirect_from:
 
   <div class="space--2"></div>
 
-    <div class="flex-grid">
       <div class="col no-gutter mini-gutter">
         <div class="card theme_box--light">
           <div class="flex-grid--nobreak">
@@ -209,6 +214,7 @@ redirect_from:
             <p class="type--nomargin">
             Yes, we are committed to ensuring existing customers remain on the same plan they signed up for. Existing plans will be honoured and grandfathered.
         </p>
+        </div>
       </div>
     </div>
   </div>
@@ -216,7 +222,7 @@ redirect_from:
   <div class="space--1"></div>
 
       <div class="col no-gutter mini-gutter">
-        <div class="card theme_box--light">
+      <div class="card theme_box--light">
           <div class="flex-grid--nobreak">
             <img class="card_icon--mini" src="/images/default/question.svg" />
             <div class="col no-gutter">
@@ -226,69 +232,117 @@ redirect_from:
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+    <div class="space--1"></div>
+
+    <div class="col no-gutter mini-gutter">
+      <div class="card theme_box--light">
+        <div class="flex-grid--nobreak">
+          <img class="card_icon--mini" src="/images/default/question.svg" />
+          <div class="col no-gutter">
+            <h3 class="theme_type--space"><strong>How does the licensing key work?</strong></h3>
+            <p class="type--nomargin">
+              After acquiring the enterprise license, a server specific license key will be generated. Once the license is added to the customer service, it will unlock the benefits of the respective license that was acquired. The license key has an expiration date agreed on the purchase and needs to be renewed to keep working.
+            </p>
           </div>
+        </div>
+      </div>
+    </div>
 
   <div class="space--1"></div>
 
-        <div class="card theme_box--light">
-          <div class="flex-grid--nobreak">
-            <img class="card_icon--mini" src="/images/default/question.svg" />
-            <div class="col no-gutter">
-              <h3 class="theme_type--space"><strong> How do I pay for Cloud?</strong></h3>
-              <p class="type--nomargin">
-                Cloud admins can add payment details and manage their account in the <a class="button--link" href="https://cloud.rocket.chat/">Rocket.Chat Cloud Console.</a> <br/> To continue with Cloud once the trial ends, users must add their payment details in
-                the Console. <br/> Accepted payment methods: Visa/Mastercard/American Express/Discover/Diner's Club credit & debit cards.
-              </p>
-            </div>
-          </div>
+  <div class="col no-gutter mini-gutter">
+    <div class="card theme_box--light">
+      <div class="flex-grid--nobreak">
+        <img class="card_icon--mini" src="/images/default/question.svg" />
+        <div class="col no-gutter">
+          <h3 class="theme_type--space"><strong>How I add the enterprise license to my server?</strong></h3>
+          <p class="type--nomargin">
+            To deploy the Rocket.Chat Enterprise, you must use the latest version of docker image. If you have a previous deployment using our community version just replace the old image with this one, all other settings are still valid. To apply the license, simply run the container setting the ROCKETCHAT_LICENSE environment variable. Keep in mind that it will be possible to see in the logs when the license had been successfully validated.
+          </p>
         </div>
-
-        <div class="space--1"></div>
-
-        <div class="card theme_box--light">
-          <div class="flex-grid--nobreak">
-            <img class="card_icon--mini" src="/images/default/question.svg" />
-            <div class="col no-gutter">
-              <h3 class="theme_type--space"><strong>What is the billing period?</strong></h3>
-              <p class="type--nomargin">
-                Billing periods vary depending on the chosen plan. Annual plans are paid for 1 year up front, while monthly plans are billed on a monthly basis. Users on a trial will be billed once their trial is over if they have added their payment details.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="space--1"></div>
-
-        <div class="card theme_box--light">
-          <div class="flex-grid--nobreak">
-            <img class="card_icon--mini" src="/images/default/question.svg" />
-            <div class="col no-gutter">
-              <h3 class="theme_type--space"><strong>When will my billing period begin?</strong></h3>
-              <p class="type--nomargin">
-                If your account has correct billing information and has not been closed,
-                your first billing period will begin the day after your trial ends.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="space--1"></div>
       </div>
+    </div>
+  </div>
 
-      <div class="col no-gutter mini-gutter">
-          <div class="card theme_box--light">
-              <div class="flex-grid--nobreak">
-                <img class="card_icon--mini" src="/images/default/question.svg" />
-                <div class="col no-gutter">
-                  <h3 class="theme_type--space"><strong>When can I cancel my plan?</strong></h3>
-                  <p class="type--nomargin">
-                    You can cancel your plan at any time and continue to access
-                    your workspace for the remainder of your billing period, by emailing <a class="button--link" href="mailto:cloud.support@rocket.chat">cloud.support@rocket.chat</a><br/> If you choose not to stay with us you can request an export of your data.
-                  </p>
-                </div>
-              </div>
+  <div class="space--1"></div>
+
+  <div class="col no-gutter mini-gutter">
+    <div class="card theme_box--light">
+      <div class="flex-grid--nobreak">
+        <img class="card_icon--mini" src="/images/default/question.svg" />
+        <div class="col no-gutter">
+          <h3 class="theme_type--space"><strong>How do I know if the Enterprise License was successfully added?</strong></h3>
+          <p class="type--nomargin">
+            It will be possible to see in the logs when the license had been successfully validated. Also, you can see that when you click on the admin menu, new options will appear, such as Messaging Audit and Messaging Audit Log.           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space--1"></div>
+
+    <div class="card theme_box--light">
+      <div class="flex-grid--nobreak">
+        <img class="card_icon--mini" src="/images/default/question.svg" />
+        <div class="col no-gutter">
+          <h3 class="theme_type--space"><strong> How do I pay for Cloud?</strong></h3>
+          <p class="type--nomargin">
+            Cloud admins can add payment details and manage their account in the <a class="button--link" href="https://cloud.rocket.chat/">Rocket.Chat Cloud Console.</a> <br/> To continue with Cloud once the trial ends, users must add their payment details in
+            the Console. <br/> Accepted payment methods: Visa/Mastercard/American Express/Discover/Diner's Club credit & debit cards.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space--1"></div>
+
+    <div class="card theme_box--light">
+      <div class="flex-grid--nobreak">
+        <img class="card_icon--mini" src="/images/default/question.svg" />
+        <div class="col no-gutter">
+          <h3 class="theme_type--space"><strong>What is the billing period?</strong></h3>
+          <p class="type--nomargin">
+            Billing periods vary depending on the chosen plan. Annual plans are paid for 1 year up front, while monthly plans are billed on a monthly basis. Users on a trial will be billed once their trial is over if they have added their payment details.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space--1"></div>
+
+    <div class="card theme_box--light">
+      <div class="flex-grid--nobreak">
+        <img class="card_icon--mini" src="/images/default/question.svg" />
+        <div class="col no-gutter">
+          <h3 class="theme_type--space"><strong>When will my billing period begin?</strong></h3>
+          <p class="type--nomargin">
+            If your account has correct billing information and has not been closed,
+            your first billing period will begin the day after your trial ends.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="space--1"></div>
+
+    <div class="col no-gutter mini-gutter">
+      <div class="card theme_box--light">
+          <div class="flex-grid--nobreak">
+            <img class="card_icon--mini" src="/images/default/question.svg" />
+            <div class="col no-gutter">
+              <h3 class="theme_type--space"><strong>When can I cancel my plan?</strong></h3>
+              <p class="type--nomargin">
+                You can cancel your plan at any time and continue to access
+                your workspace for the remainder of your billing period, by emailing <a class="button--link" href="mailto:cloud.support@rocket.chat">cloud.support@rocket.chat</a><br/> If you choose not to stay with us you can request an export of your data.
+              </p>
             </div>
+          </div>
+        </div>
+      </div>
 
         <div class="space--1"></div>
 
@@ -356,7 +410,7 @@ redirect_from:
 
         <div class="plan_wrapper card--shadow">
           <div class="plan_content">
-              <h2 class="display">Pro</h2>
+              <h2 class="display">Pro**</h2>
               <br />
               <p class="theme_type--light">For businesses ready to step up their team communication and access more features.</p>
               <p class="display">$3
@@ -368,13 +422,14 @@ redirect_from:
               <br />
           </div>
           <footer>
-            <a href="#" class="button trial contact" data-featherlight="#pricing-form" data-featherlight-persist="true" data-label="Self-Managed Pro" rel="noopener noreferrer">Contact Us</a>
+            <a href="#" class="button trial contact" data-featherlight="#sales-contact-form-wrap" data-featherlight-variant="featherlight-form" data-label="Self-Managed Pro" rel="noopener noreferrer">Contact Us</a>
+          </footer>
         </div>
 
 
           <div class="plan_wrapper card--shadow">
             <div class="plan_content">
-              <h2 class="display">Enterprise</h2>
+              <h2 class="display">Enterprise**</h2>
               <br />
               <p class="theme_type--light">For businesses needing high-level scalability, management and unlimited features.</p>
               <p class="display--medium">Tiered Pricing <br>
@@ -384,10 +439,11 @@ redirect_from:
               <br />
             </div>
             <footer>
-              <a href="#" class="button trial contact" data-featherlight="#pricing-form" data-featherlight-persist="true" data-label="Self-Managed Enterprise" rel="noopener noreferrer">Contact Us</a>
+              <a href="#" class="button trial contact" data-featherlight="#sales-contact-form-wrap" data-featherlight-variant="featherlight-form" data-label="Self-Managed Enterprise" rel="noopener noreferrer">Contact Us</a>
             </footer>
           </div>
-      </div>
+        </div>
+        <p class="self-disclaimer">** License available for containers deployed with Docker</p>
   </section>
   <section class="container">
       {% capture header %}
@@ -450,6 +506,20 @@ redirect_from:
               <h3 class="theme_type--space"><strong>How long do trials last?</strong></h3>
               <p class="type--nomargin">
                 Every plan has a 14-day free trial. <br> We will notify users in advance of when the trial is coming to an end.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space--1"></div>
+
+        <div class="card theme_box--light">
+          <div class="flex-grid--nobreak">
+            <img class="card_icon--mini" src="/images/default/question.svg" />
+            <div class="col no-gutter">
+              <h3 class="theme_type--space"><strong>What is the payment system for my  workspace?</strong></h3>
+              <p class="type--nomargin">
+                You can manage your workspace payment at cloud.rocket.chat, payments can be done through debit or credit card. On a monthly basis your workspace will be charged automatically.
               </p>
             </div>
           </div>
@@ -541,7 +611,7 @@ redirect_from:
             </div>
           </div>
         </div>
-      </div>
+
     </div>
   </section>
 </div>
@@ -550,12 +620,6 @@ redirect_from:
 
 {% include adwords/trial.html %}
 
-{% include pricing-form.html %}
-
-<script src="/solutionsForm.js"></script>
-
-
-<div id="solution-form__after-box">
-  <h3 class="theme_type--light">You’ll be in great company!</h3>
-  <p>We are trusted over thousand companies across 150 countries <br><br> We’ll contact you soon!</p>
+<div id="sales-contact-form-wrap">
+  {% include sales-contact-form.html theme="light" %}
 </div>

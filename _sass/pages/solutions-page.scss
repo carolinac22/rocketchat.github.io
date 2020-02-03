@@ -635,10 +635,6 @@ body.solutions-page .featherlight .featherlight-content {
     background-color: $space-b;
 }
 
-body.pricing .featherlight .featherlight-content {
-    background-color: #fff;
-}
-
 body .featherlight .featherlight-content {
     width: 544px;
     padding: 0;
@@ -666,6 +662,7 @@ body .featherlight .featherlight-content {
 
     #solution-form__after-box {
         display: block;
+        background-color: $space-b;
         margin: 10px 30px;
         h3 {
             font-weight: bold;

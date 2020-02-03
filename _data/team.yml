@@ -229,25 +229,25 @@
   username: marina.vdovkina
   photo: yes
   country: Ukraine
-  
+
 - name: Guilherme Cruz
   role: Software Developer
   department: Cloud
   github_username: guicruzzs
   username: guilherme.cruz
   twitter: cruzguilherm
-  photo: no
+  photo: yes
   country: Brazil
-  
+
 - name: Djorkaeff Pereira
   role: React Native Developer
   department: Mobile
   github_username: djorkaeffalexandre
   github_uid: 29778115
   username: djorkaeff.alexandre
-  photo: no
+  photo: yes
   country: Brazil
-  
+
 - name: Eduardo Pereira
   role: Head of Sales North America
   department: Sales
@@ -263,7 +263,7 @@
   username: alexandre.fornes
   photo: yes
   country: Brazil
-  
+
 - name: William Valle
   role: Inside Sales Representative
   department: Sales
@@ -271,7 +271,7 @@
   username: william.valle
   photo: yes
   country: Brazil
-  
+
 - name: Shiqi Mei
   role: Rocket.Chat Apps Developer
   department: Rocket.Chat Apps
@@ -280,7 +280,7 @@
   username: shiqi.mei
   photo: yes
   country: China
- 
+
 - name: Laura Coutinho
   role: Talent Acquisition
   department: Operations
@@ -297,3 +297,50 @@
   username: rogerio.saboia
   photo: yes
   country: Brazil
+
+- name: Ivan Netto
+  role: Designer
+  department: Product
+  github_username: ivans-netto
+  username: ivan.netto
+  photo: yes
+  country: Brazil
+
+- name: José Naranjo
+  role: Market Development Representative
+  department: Sales
+  github_username: josenaranjo1408
+  username: jose.naranjo
+  photo: yes
+  country: Ecuador
+
+- name: Karina Monarkh
+  role: Support Analyst
+  department: Operations
+  github_username: monarkh-karina
+  username: karina.monarkh
+  photo: yes
+  country: Ukraine
+
+- name: Eduarda Cunha
+  role: Frontend Developer
+  department: Technology
+  github_username: mariaeduardacunha
+  username: eduarda.cunha
+  photo: yes
+  country: Brazil
+
+- name: Gabriel Henriques
+  role: Front End Developer
+  department: Technology
+  github_username: gabriellsh
+  username: gabriel.henriques
+  photo: yes
+  country: Brazil
+
+- name: Paris Dufrayer
+  role: Head of Sales EMEA Region
+  department: Sales
+  username: paris.dufrayer
+  photo: yes
+  country: Spain
