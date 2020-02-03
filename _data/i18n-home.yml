@@ -1,0 +1,124 @@
+en:
+  home-hero_title: Open Source Team Communication
+  home-hero_description: Rocket.Chat is free, unlimited and open source. Replace email, HipChat & Slack with the ultimate team chat software solution.
+  home-hero_trial_button: Start Cloud Trial
+  home-hero_install_button: Start Own Server
+  clients_trusted_by: Trusted By
+  home-landingpage_title: Replace Email
+  home-landingpage_description_1: Open up the conversation and remove the need for CC/BCC by using Rocket.Chat Channels and Private Groups to speak to your team openly for greater transparency.
+  home-landingpage_description_2: Include relevant participants with the @username mention to notify those immediately. For important announcements to all members of a group, use @all. Full chat history allows participants to join and leave at any time.
+  home-landingpage2_title: Team Chat
+  home-landingpage2_description_1: Communicate and collaborate using team chat and switch to video or audio calls with screen sharing for more efficient teamwork.
+  home-landingpage2_description_2: Improve productivity by discussing and sharing ideas, projects and files with real-time or asynchronous team chat.
+  home-landingpage3_title: What is Rocket.Chat?
+  home-landingpage3_description_1: Communicate and collaborate with your team, share files, chat in real time or switch to video/audio conferencing.
+  home-landingpage3_description_2: Watch the video to see how Rocket.Chat provides the ideal platform for your team or business needs.
+  home-landingpage3_watch_now: "Watch Now:"
+  home-community_label: Open Source
+  home-community_title: A Universe of Possibilities
+  home-community_description: With complete access to the source code, you can fully customize, extend or add new functionality to meet your requirements.
+  home-community_description2: Join the thousands of developers who are creating the best chat platform on
+  secure-conversation_title: Secure Conversations
+  secure-conversation_description: A safe workspace with username restriction and admin transparency. Remove bad actors by adding moderators and provide admins with additional controls.
+  blockchain_title: Trusted by blockchain innovators
+  blockchain_description: Join leading blockchain projects such as Aragon, Brave, Hyperledger, Golem, Tokenly and others in migrating from Slack. Do so easily thanks to
+
+  migrating_from: Migrating from
+  choose_from: Choose from our two
+  hipchat_importers: HipChat Importers
+  learn_about_importing: Learn more about importing to Rocket.Chat
+
+  livechat_description1: With Omnichannel by Rocket.Chat you can add real-time chat widgets to any website or mobile app to get more value from your team chat and provide high quality customer service.
+  livechat_description2: Replace other systems and use one communication platform to save time and money. Create a user support helpdesk, answer customer queries and convert leads.
+
+  realtime_title: Real-Time Translation
+  realtime_description1: Rocket.Chat uses cutting edge machine learning for automatic real-time message translation between users.
+  realtime_description2: Our user interface has been translated to over 50 languages, more than any other team chat service.
+
+  home-install_title: For all platforms
+  home-install_description: You can take Rocket.Chat anywhere with our web, desktop &amp; mobile apps, LiveChat clients and SDK.
+
+  customization_title: Endless Customization
+  customization_description: Customize your platform to tailor its exact look & feel by adding or removing features and selecting your own integrations, plugins & themes.
+
+  integrations_title: Integrations
+  integrations_description: Add incoming and outgoing WebHook integrations to Rocket.Chat
+
+  plugins_title: Plugins
+  plugins_description: Integrate Rocket.Chat features into popular applications such as Drupal or Pidgin
+
+  themes_title: Themes
+  themes_description: Personalize your UI by overriding any of the built-in styles
+
+  api_title: Powerful APIs
+  api_description: Use Rocket.Chat’s REST API, LiveChat API or Real time API
+
+  importers_title: Data Importers
+  importers_description: Migrate from other team chat software and bring all your data with you using our easy-to-use data importers for Slack and HipChat
+
+  marketplace_title: Marketplace
+  marketplace_description: Find and install apps to extend Rocket.Chat or upload and sell an app you have developed.
+  marketplace_find: Find apps now!
+
+
+
+pt:
+  home-hero_title: Comunicação Open Source para times
+  home-hero_description: Controle sua comunicação, gerencie seus dados e melhore a produtividade da sua equipe. Rocket.Chat é escalável e de código aberto. Substitua email, HipChat e Slack.
+  home-hero_trial_button: Iniciar Teste na Cloud
+  home-hero_install_button: Instalar servidor próprio
+  clients_trusted_by: Confiado por
+  home-landingpage_title: Substitua o Email
+  home-landingpage_description_1: Dinamize sua comunicação, reduza o retrabalho e a perda de performance com reenvios de mensagens usando Canais e Grupos para falar online com sua equipe e obter maior agilidade e transparência.
+  home-landingpage_description_2: Inclua participantes relevantes com a menção @username para notificá-los imediatamente. Para anúncios importantes, chame a atenção de todos os membros de um grupo usando @all. O histórico completo de chat permite que os membros participem e saiam a qualquer momento.
+  home-landingpage2_title: Chat em Equipe
+  home-landingpage2_description_1: Comunique-se e colabore em time, usando todas as ferramentas de comunicação disponíveis. Alterne mensagens, compartilhamento de arquivos, videoconferências, áudios, tutoriais, links,  compartilhamento de tela e muito mais para obter um trabalho mais eficiente dos times.
+  home-landingpage2_description_2: Melhore sua produtividade discutindo e compartilhando ideias, projetos e arquivos em tempo real.
+  home-landingpage3_title: O que é Rocket.Chat?
+  home-landingpage3_description_1: A mais completa e eficiente ferramenta de comunicação online, atendimento ao mercado em ambiente omnichannel, colaboração entre times, comunicação segura entre empresas (Redes-Holdings-Dealers) e integrações ilimitadas. Disponível em cloud ou implementada na infraestrutura da empresa.
+  home-landingpage3_description_2: Assista ao vídeo para ver como o Rocket.Chat fornece a plataforma ideal para suas necessidades de equipe ou de negócios.
+  home-landingpage3_watch_now: "Assista Agora:"
+  home-community_label: Código Aberto
+  home-community_title: Um Universo de Possibilidades
+  home-community_description: Com acesso completo ao código-fonte, você pode customizar, estender ou adicionar novas funcionalidades para atender às suas necessidades.
+  home-community_description2: Junte-se aos milhares de desenvolvedores que estão criando a melhor plataforma de chat em
+  secure-conversation_title: Conversas Seguras e Produtivas
+  secure-conversation_description: Um espaço de trabalho seguro com regras customizáveis de uso para cada tipo de usuário. Defina moderadores e administradores para gerenciar a produtividade e a qualidade da comunicação dos times.
+  blockchain_title: Confiado por inovadores de blockchain
+  blockchain_description: Junte-se aos principais projetos de blockchain, como Aragon, Brave, Hyperledger, Golem, Tokenly e outros na migração do Slack. Faça isso facilmente graças ao
+  migrating_from: Migrando de
+  choose_from: Escolha entre nossos dois
+  hipchat_importers: Importadores de HipChat
+  learn_about_importing: Saiba mais sobre a importação para o Rocket.Chat
+
+  livechat_description1: Comunique-se com os visitantes do seu site, você disponibiliza um canal direto com seu público, abra a comunicação em qualquer site ou aplicativo mobile para fornecer um atendimento de alta qualidade ao seu mercado. O Omnichannel permite integrar outros canais e robôs para aumentar ainda mais a experiência do seu cliente.
+  livechat_description2: Integre a Rocket.Chat com outros canais de comunicação e use uma única plataforma para economizar tempo e dinheiro. Ofereça  um serviço de suporte ao seu consumidor, responda a consultas com agilidade e eficiência, converta seu visitante em um cliente.
+
+  realtime_title: Tradução em Tempo Real
+  realtime_description1: O Rocket.Chat usa o machine learning de ponta para a tradução automática de mensagens em tempo real entre os usuários.
+  realtime_description2: Nossa interface do usuário foi traduzida para mais de 50 idiomas, mais do que qualquer outro serviço de chat em equipe.
+
+  home-install_title: Para todas as plataformas
+  home-install_description: Você pode levar o Rocket.Chat para qualquer lugar com os nossos apps web, desktop e mobile, clientes LiveChat e SDK.
+
+  customization_title: Personalização sem fim
+  customization_description: Customize sua plataforma e personalize sua aparência e experiência, adicionando ou removendo recursos e selecionando suas próprias integrações, plugins e temas.
+
+  integrations_title: Integrações
+  integrations_description: Adicione integrações WebHook de entrada e saída ao Rocket.Chat
+
+  plugins_title: Plugins
+  plugins_description: Integre recursos do Rocket.Chat a aplicativos populares como Drupal ou Pidgin
+
+  themes_title: Temas
+  themes_description: Personalize sua interface do usuário substituindo qualquer um dos estilos internos
+
+  api_title: APIs poderosas
+  api_description: Use a API REST Rocket.Chat, API LiveChat ou API em tempo real
+
+  importers_title: Importadores de dados
+  importers_description: Migre de outro software de chat em equipe e leve todos os seus dados com você, usando nossos importadores de dados fáceis de usar para Slack e HipChat
+
+  marketplace_title: Marketplace
+  marketplace_description: Integre o seu servidor com apps disponíveis no nosso marketplace e expanda as suas funcionalidades.
+  marketplace_find: Encontre Apps Agora!

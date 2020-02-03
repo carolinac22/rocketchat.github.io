@@ -7,13 +7,17 @@ paginate: 8
 future: true
 
 # bump if alterting styles
-version: 184
+version: 200
 
 # read speed
 wpm: 160
 
 # set default template for posts
 defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
   - scope:
       type: posts
     values:

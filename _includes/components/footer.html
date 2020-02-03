@@ -1,0 +1,125 @@
+{% assign tg = site.data.i18n-general[include.lang] %}
+<footer class="app-footer {% if page.theme == 'light' %}app-footer--light{% elsif page.theme == 'dark' %}app-footer--black{% endif %}">
+    <div class="container">
+
+      <div class="app-footer_col">
+        <input id="menu1" type="checkbox" />
+        <label for="menu1" class="app-footer_pre-menu">{{tg.product}}</label>
+        <ul class="app-footer_nav">
+          <li><a href="/">Rocket.Chat</a></li>
+          <li><a href="/pricing">{{tg.pricing}}</a></li>
+          <li><a href="/devops">DevOps</a></li>
+          <li><a href="/customer-solutions">Omnichannel</a></li>
+          <li><a href="/bots">Bots</a></li>
+          <li><a href="/community">{{tg.community}}</a></li>
+          <li><a href="/webinars">Webinars</a></li>
+          <li><a href="/docs/">{{tg.documentation}}</a></li>
+        </ul>
+      </div>
+
+      <div class="app-footer_col">
+        <input id="menu2" type="checkbox" />
+        <label for="menu2" class="app-footer_pre-menu">{{tg.company}}</label>
+        <ul class="app-footer_nav">
+          <li><a href="/team">{{tg.team}}</a></li>
+          <li><a href="/jobs">{{tg.jobs}}</a></li>
+          <li><a href="/contact">{{tg.contact}}</a></li>
+          <li><a href="/partners">{{tg.partners}}</a></li>
+          <li><a href="/press">{{tg.press}}</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="//shop.spreadshirt.com/rocketchat" target="_blank" rel="noopener noreferrer">Gift shop</a></li>
+        </ul>
+      </div>
+
+      <div class="app-footer_col">
+        <input id="menu3" type="checkbox" />
+        <label for="menu3" class="app-footer_pre-menu">{{tg.legal}}</label>
+        <ul class="app-footer_nav">
+          <li><a href="/terms">{{tg.terms-of-service}}</a></li>
+          <li><a href="/privacy">{{tg.privacy}}</a></li>
+          <li><a href="/dmca">{{tg.dmca-policy}}</a></li>
+          <li><a href="/gdpr">GDPR</a></li>
+        </ul>
+      </div>
+
+      <div class="app-footer_col">
+        <input id="menu4" type="checkbox" />
+        <label for="menu4" class="app-footer_pre-menu">{{tg.get-started}}</label>
+        <ul class="app-footer_nav">
+          <li><a class="app-footer_install" target="_blank" rel="noopener noreferrer" href="//cloud.rocket.chat/trial/bronze"><span><img src="{{site.url}}/images/default/cloud.svg" alt="Free trial"></span> {{tg.cloud-trial}}</a></li>
+          <li><a class="app-footer_install" href="/install" title="install"><span style="margin-top: -0.1em;"><img src="{{site.url}}/images/default/install.svg" alt="Install" style="margin-top: 0.35em"></span> {{tg.install-server}}</a></li>
+        </ul>
+        <div class="app-footer_social">
+            <h2 class="app-footer_title">{{tg.connect-with-us}}</h2>
+            <div class="social_icons {{page.theme}}">
+              <a href="https://twitter.com/rocketchat" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/twitter.svg" alt="twitter" /></a>
+              <a href="https://github.com/RocketChat/Rocket.Chat" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/github.svg" alt="github" /></a>
+              <a href="https://www.facebook.com/RocketChatApp/" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/facebook.svg" alt="facebook" /></a>
+              <a href="https://www.linkedin.com/company/rocket-chat" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/linkedin.svg" alt="linkedin" /></a>
+              <a href="https://www.youtube.com/channel/UCin9nv7mUjoqrRiwrzS5UVQ" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/youtube.svg" alt="youtube" /></a>
+          </div>
+        </div>
+      </div>
+
+       <div class="app-footer_wrap-logo">
+        <h1 class="app-footer_logo">
+          <a href="/">
+            {% if page.theme == 'light' %}
+              <img src="{{site.url}}/images/default/logo--dark.svg" alt="Rocket.Chat">
+            {% else %}
+              <img src="{{site.url}}/images/default/logo.svg" alt="Rocket.Chat">
+            {% endif %}
+          </a>
+        </h1>
+
+        {% if page.hasTranslation %}
+        <div class="app-footer_language">
+            <h2 class="app-footer_title">{{tg.language}}</h2>
+            <select class="select language-selector {{page.theme}}" onchange="
+              var lang = this.value;
+              var url = window.location.href;
+              if (lang === 'en') {
+                url = url.replace('/pt', '');
+              } else if (lang === 'pt') {
+                if (!url.includes('/pt')) {
+                  url = url+'/pt';
+                }
+              };
+              location = url;
+              ">
+              <option value="en">🇺🇸 English</option>
+              <option value="pt" {% if include.lang == 'pt' %} selected {% endif %} >🇧🇷 Português</option>
+            </select>
+        </div>
+        {% endif %}
+
+        <div class="github-buttons-wrapper">
+          <h2 class="app-footer_title">{{tg.star-or-fork-on-github}}</h2>
+          <a class="app-footer_github" target="_blank" href="//github.com/RocketChat/Rocket.Chat/stargazers" rel="noopener noreferrer">
+            {% if page.theme == 'light' %}
+              <span><img src="{{site.url}}/images/default/star--dark.svg" alt="GitHub Stars" /></span>
+            {% else %}
+              <span><img src="{{site.url}}/images/default/star.svg" alt="GitHub Stars"></span>
+            {% endif %}
+            <span class="star-count">{{site.stars}}K</span>
+          </a>
+          <a class="app-footer_github" target="_blank" href="//github.com/RocketChat/Rocket.Chat/fork" rel="noopener noreferrer">
+            {% if page.theme == 'light' %}
+              <span><img src="{{site.url}}/images/default/fork--dark.svg" alt="GitHub forks" /></span>
+            {% else %}
+              <span><img src="{{site.url}}/images/default/fork.svg" alt="GitHub forks"></span>
+            {% endif %}
+            <span class="fork-count">{{site.forks}}K</span>
+          </a>
+        </div>
+
+        <a href="//keycdn.com" target="_blank" rel="noopener noreferrer" class="app-footer_partner">
+          {% if page.theme == 'light' %}
+            <img src="{{site.url}}/images/partners/keycdnlogo--dark.png" alt="KeyCDN">
+          {% else %}
+            <img src="{{site.url}}/images/partners/keycdnlogo.png" alt="KeyCDN">
+          {% endif %}
+        </a>
+      </div>
+    </div>
+  </footer>
