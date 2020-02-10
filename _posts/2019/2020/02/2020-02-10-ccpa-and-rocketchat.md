@@ -4,7 +4,7 @@ categories:
 - News
 - Product
 date: 2020-02-10 12:00:00
-author: Markus Kirsch
+author: Rocket.Chat Team
 cover: /images/posts/2020/02/ccpa.jpg
 featured: true
 ---
