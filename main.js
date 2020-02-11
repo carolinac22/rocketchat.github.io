@@ -165,7 +165,12 @@ $(document).ready(function() {
   }
 
   if(window.location.hash.substring(1) === 'thank-you' && $.featherlight) {
-    $.featherlight($('#solution-form__after-box'));
+
+    if ($('body').hasClass('pricing')){
+        $.featherlight($('#pricing-form__after-box'), {featherlight_variant: "featherlight-form"});
+    } else {
+        $.featherlight($('#solution-form__after-box'), {featherlight_variant: "featherlight-form"});
+    }
   }
 
   $('#partners-popup').featherlight({

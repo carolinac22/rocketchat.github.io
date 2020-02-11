@@ -645,12 +645,6 @@ var formHelpers = {
 	}
 };
 
-var modalButton = document.querySelector('.js-become-partner-close');
-modalButton.addEventListener('click', function() {
-	formHelpers.toggleModal(true);
-});
-
-
 $(document).on('submit', '.featherlight .form-validate', function(event){
     var data = $('.featherlight .form-validate').serializeArray().reduce(function(obj, item) {
         obj[item.name] = item.value;
@@ -672,8 +666,8 @@ submit = function(data) {
     var current = $.featherlight.current();
     current.close();
     if (data.solution.includes('Pricing')){
-        $.featherlight($('#pricing-form__after-box'), {});
+        $.featherlight($('#pricing-form__after-box'), {featherlight_variant: "featherlight-form"});
     } else {
-        $.featherlight($('#solution-form__after-box'), {});
+        $.featherlight($('#solution-form__after-box'), {featherlight_variant: "featherlight-form"});
     }
 }

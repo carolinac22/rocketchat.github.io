@@ -202,6 +202,19 @@ fieldset {
 
 .featherlight {
   z-index: 100 !important;
+
+  #pricing-form__after-box {
+    display: block;
+    padding: 10px 30px;
+    color: $space;
+
+    h3 {
+      font-weight: bold;
+      font-size: 32px;
+      color: $space;
+      margin-bottom: 24px;
+    }
+  }
 }
 
 body.light .featherlight.featherlight-form .featherlight-content {
@@ -221,6 +234,7 @@ body.dark .featherlight.featherlight-form .featherlight-content {
     width: 544px;
     padding: 0 !important;
     box-shadow:  0 2px 16px 0 rgba(0, 0, 0, 0.5);
+    border-bottom: none !important;
 
     @media screen and (max-width: $tablet) {
       width: auto;
@@ -239,19 +253,6 @@ body.dark .featherlight.featherlight-form .featherlight-content {
     h3 {
       font-weight: bold;
     }
-
-    #pricing-form__after-box {
-      display: block;
-      margin: 10px 30px;
-      color: $space;
-      h3 {
-        font-weight: bold;
-        font-size: 32px;
-        color: $space;
-        margin-bottom: 24px;
-      }
-    }
-
 
     .featherlight-close-icon {
       background: none;
