@@ -1,6 +1,7 @@
 en:
   english: English
   portuguese: Portuguese
+  spanish: Spanish
   or: or
   open_on_github: Open on GitHub
   learn_more: Learn More
@@ -42,6 +43,7 @@ en:
 pt:
   english: Inglês
   portuguese: Português
+  spanish: Espanhol
   or: ou
   open_on_github: Abrir no GitHub
   learn_more: Saiba Mais
@@ -78,3 +80,43 @@ pt:
   welcome_to_rc: Bem vindo ao Rocket.Chat!
   become-partner: Se torne Um Parceiro
   contact-us: Fale Conosco
+
+es:
+  english: Inglés
+  portuguese: Português
+  spanish: Español
+  or: o
+  open_on_github: Abrir en GitHub
+  learn_more: Sepa Mas
+  and: "y"
+  feature: funcionalidad
+  install: Instalar
+  solutions: Soluciones
+  team-collaboration: Colaboración en equipo
+  security: Seguridad
+  pricing: Planes
+  community: Comunidad
+  docs: Docs
+  documentation: Documentação
+  contact: Contactanos
+  try-now: Pruébalo ahora
+  product: producto
+  company: COMPAÑÍA
+  team: Nuestro Equipo
+  jobs: Trabaja con nosotros
+  partners: Socios
+  press: Media
+  legal: Legal
+  terms-of-service: Términos de servicio
+  privacy: Privacidad
+  dmca-policy: Política DMCA
+  get-started: Comienza ahora
+  cloud-trial: Cloud trial
+  install-server: Instalación en el servidor
+  connect-with-us: CONECTATE
+  star-or-fork-on-github: Star ou Fork no GitHub
+  language: Idioma
+  moving_from_atlassian: Usabas Atlassian Hipchat?
+  welcome_to_rc: Bienvenido a Rocket.chat
+  become-partner: Hazte socio
+  contact-us: Hable con nosotros

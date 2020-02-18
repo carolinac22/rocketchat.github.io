@@ -84,11 +84,16 @@
                 if (!url.includes('/pt')) {
                   url = url+'/pt';
                 }
+              } else if (lang === 'es') {
+                if (!url.includes('/es')) {
+                  url = url+'/es';
+                }
               };
               location = url;
               ">
               <option value="en">🇺🇸 English</option>
               <option value="pt" {% if include.lang == 'pt' %} selected {% endif %} >🇧🇷 Português</option>
+              <option value="es" {% if include.lang == 'es' %} selected {% endif %} >🇪🇸 Español</option>
             </select>
         </div>
         {% endif %}

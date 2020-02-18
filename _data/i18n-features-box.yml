@@ -20,3 +20,15 @@ pt:
   messages: Mensagens
   guests: Convidados
   file-uploads: Uploads de arquivos
+
+es:
+  enterprise_label: ILIMITADO & OPEN SOURCE
+  enterprise_title: Funcionalidades
+  enterprise_description: Conferencia de audio y vídeo, acceso a usuarios invitados, te permite compartir tu pantalla, subir archivos, chat en línea, sincronización LDAP GROUP, autenticación de dos factores (2FA), encriptación de extremo a extremo, SSO y decenas de proveedores OAuth.
+  enterprise_description2: "Incluye de manera ilimitada:"
+  users: Usuarios
+  channels: Canales
+  searches: Búsquedas
+  messages: Mensajes
+  guests: Invitados
+  file-uploads: Carga de archivos
