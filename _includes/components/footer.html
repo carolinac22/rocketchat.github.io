@@ -50,8 +50,10 @@
           <li><a class="app-footer_install" href="/install" title="install"><span style="margin-top: -0.1em;"><img src="{{site.url}}/images/default/install.svg" alt="Install" style="margin-top: 0.35em"></span> {{tg.install-server}}</a></li>
         </ul>
         <div class="app-footer_social">
-            <h2 class="app-footer_title">{{tg.connect-with-us}}</h2>
-            <div class="social_icons {{page.theme}}">
+          <input id="menu5" type="checkbox" />
+          <label for="menu5" class="app-footer_pre-menu">{{tg.connect-with-us}}</label>
+            <!-- <h2 class="app-footer_title">{{tg.connect-with-us}}</h2> -->
+            <div class="social_icons {{page.theme}} app-footer_nav">
               <a href="https://twitter.com/rocketchat" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/twitter.svg" alt="twitter" /></a>
               <a href="https://github.com/RocketChat/Rocket.Chat" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/github.svg" alt="github" /></a>
               <a href="https://www.facebook.com/RocketChatApp/" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/facebook.svg" alt="facebook" /></a>
@@ -59,6 +61,9 @@
               <a href="https://www.youtube.com/channel/UCin9nv7mUjoqrRiwrzS5UVQ" target="_blank" rel="noopener noreferrer"><img src="{{site.url}}/images/social/youtube.svg" alt="youtube" /></a>
           </div>
         </div>
+
+        {% include newsletter-form.html lang=page.lang %}
+
       </div>
 
        <div class="app-footer_wrap-logo">

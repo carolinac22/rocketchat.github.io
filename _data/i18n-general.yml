@@ -38,6 +38,8 @@ en:
   welcome-to-rc: Welcome to Rocket.Chat!
   become-partner: Become a partner
   contact-us: Contact Us
+  subscribe-newsletter: Subscribe to our Newsletter
+  subscribe: Subscribe
 
 
 pt:
@@ -80,6 +82,8 @@ pt:
   welcome_to_rc: Bem vindo ao Rocket.Chat!
   become-partner: Se torne Um Parceiro
   contact-us: Fale Conosco
+  subscribe-newsletter: Assine a nossa newsletter
+  subscribe: Se Inscrever
 
 es:
   english: Inglés
@@ -120,3 +124,5 @@ es:
   welcome_to_rc: Bienvenido a Rocket.chat
   become-partner: Hazte socio
   contact-us: Hable con nosotros
+  subscribe-newsletter: Suscríbete a nuestro newsletter
+  subscribe: Suscribir
