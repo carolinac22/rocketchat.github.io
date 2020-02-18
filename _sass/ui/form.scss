@@ -207,6 +207,7 @@ fieldset {
     display: block;
     padding: 10px 30px;
     color: $space;
+    max-width: 400px;
 
     h3 {
       font-weight: bold;
@@ -296,5 +297,6 @@ body.dark .featherlight.featherlight-form .featherlight-content {
   .input {
     display: block;
     margin: 0;
+    color: #fff;
   }
 }

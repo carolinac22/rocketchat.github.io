@@ -164,12 +164,14 @@ $(document).ready(function() {
     }
   }
 
-  if(window.location.hash.substring(1) === 'thank-you' && $.featherlight) {
+  var substring = window.location.hash.substring(1)
+
+  if((substring === 'thank-you' || substring === 'subscribed') && $.featherlight) {
 
     if ($('body').hasClass('pricing')){
-        $.featherlight($('#pricing-form__after-box'), {featherlight_variant: "featherlight-form"});
+        $.featherlight($(`#pricing-form__after-box.${substring}`), {featherlight_variant: "featherlight-form"});
     } else {
-        $.featherlight($('#solution-form__after-box'), {featherlight_variant: "featherlight-form"});
+        $.featherlight($(`#solution-form__after-box.${substring}`), {featherlight_variant: "featherlight-form"});
     }
   }
 

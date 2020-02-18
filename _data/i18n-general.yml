@@ -40,6 +40,7 @@ en:
   contact-us: Contact Us
   subscribe-newsletter: Subscribe to our Newsletter
   subscribe: Subscribe
+  subscribed: Subscribed
 
 
 pt:
@@ -84,6 +85,7 @@ pt:
   contact-us: Fale Conosco
   subscribe-newsletter: Assine a nossa newsletter
   subscribe: Se Inscrever
+  subscribed: Inscrito
 
 es:
   english: Inglés
@@ -126,3 +128,4 @@ es:
   contact-us: Hable con nosotros
   subscribe-newsletter: Suscríbete a nuestro newsletter
   subscribe: Suscribir
+  subscribe: Suscrito

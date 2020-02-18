@@ -1,7 +1,7 @@
 {% assign tc = site.data.i18n-contact[include.lang] %}
 {% assign tg = site.data.i18n-general[include.lang] %}
 
-<div id="{% if page.class == 'pricing' %}pricing-{% else %}solution-{% endif %}form__after-box">
+<div id="{% if page.class == 'pricing' %}pricing-{% else %}solution-{% endif %}form__after-box" class="thank-you">
     <div class="col--haft">
         <div class="space--2"></div>
         <p class="label theme_type--grey">{{tg.contact-us}}</p>
@@ -16,3 +16,20 @@
     });
     </script>
 </div>
+
+<div id="{% if page.class == 'pricing' %}pricing-{% else %}solution-{% endif %}form__after-box" class="subscribed">
+    <div class="col--haft">
+        <div class="space--2"></div>
+        <p class="label theme_type--grey">Newsletter</p>
+        <h2 class="display--small theme_type--{{page.theme}}"><strong>{{tg.subscribed}}!</strong></h2>
+        <p class="theme_type--{{page.theme}}">{{tc.contact_popover-subscribed}}</p>
+        <button class="button featherlight-extra-close">Ok</button>
+        <div class="space--1"></div>
+    </div>
+    <script>
+    $('.featherlight-extra-close').on('click', function(){
+        $('.featherlight-close').click();
+    });
+    </script>
+</div>
+

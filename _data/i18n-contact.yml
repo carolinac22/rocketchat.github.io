@@ -12,6 +12,7 @@ en:
   contact_popover-message-sent: Message sent successfully!
   contact_popover-thanks: Thanks for contacting us! We will be in touch with you shortly.
 
+  contact_popover-subscribed: Thanks for subscribing to our newsletter! Keep an eye out for Rocket.Chat news and updates on your email!
   # Cards
   contact_support-features-title: Features or Bugs
   contact_support-features-desc: If you think you've found a bug or would like to request a feature for Rocket.Chat, join GitHub and search through the existing issues or create a new one if one doesn't exist.
@@ -50,6 +51,8 @@ pt:
 
   contact_popover-message-sent: Mensagem enviada com sucesso!
   contact_popover-thanks: Obrigado por entrar em contato! Entraremos em contato em breve.
+
+  contact_popover-subscribed: Obrigado por assinar a nossa newsletter! Fique de olho nas notícias e atualizações sobre a Rocket.Chat no seu e-mail!
 
   # Cards
   contact_support-features-title: Features ou Bugs

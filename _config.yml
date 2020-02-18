@@ -8,7 +8,7 @@ future: true
 
 # bump if alterting styles
 
-version: 206
+version: 207
 
 # read speed
 wpm: 160
