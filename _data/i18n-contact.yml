@@ -79,5 +79,46 @@ pt:
   contact_support-meet-desc: Venha dizer oi em uma meetup ou conferência, conte-nos como você o personalizou para atender às suas necessidades e melhorou a comunicação da sua equipe.
   contact_support-meet-link: Explorar Events
 
+es:
+  contact_title: Póngase en contacto con Rocket.Chat
+  contact_description: Solicite una función, informe errores o comparta su Rocket.Chat Cuente la historia con nosotros
+
+  contact_support-desc: Obtenga apoyo de una comunidad de código abierto apasionada, global y activa
+  contact_support-title: Recursos gratuitos para ayudarlo
+  contact_support-label: Recursos de apoyo
+
+  contact_research: Investigación y desarrollo
+  contact_headquarters: Sede
+
+  contact_popover-message-sent: ¡Mensaje enviado con éxito!
+  contact_popover-thanks: ¡Gracias por contactarnos! Nos pondremos en contacto con usted en breve.
+
+  contact_popover-subscribed: ¡Gracias por suscribirte a nuestro boletín! Esté atento a las noticias y actualizaciones de Rocket.Chat en su correo electrónico.
+  # Cards
+  contact_support-features-title: Features o Bugs
+  contact_support-features-desc: Si cree que ha encontrado un error o desea solicitar una función para Rocket.Chat, únase a GitHub y busque las issues existentes o cree uno nuevo si no existe.
+  contact_support-features-link: Ver Issues
+
+  contact_support-documentation-title: Documentación y Tutoriales
+  contact_support-documentation-desc: La documentación de Rocket.Chat tiene guías para ayudar a los usuarios, administradores y desarrolladores a usar, administrar, personalizar y desarrollar para Rocket.Chat.
+  contact_support-documentation-link: Ver documentación
+
+  contact_support-forums-title: Forums
+  contact_support-forums-desc: Para hablar sobre el desarrollo de Rocket.Chat con el equipo y la comunidad de Rocket.Chat, únase a nuestro foro de Discurso.
+  contact_support-forums-link: Visita el foro
+
+  contact_support-videos-title: Videos Tutoriales
+  contact_support-videos-desc: Rocket.Chat tiene una comunidad apasionada de creadores de contenido en YouTube que comparten tutoriales sobre configuración, instalación, personalización y desarrollo para Rocket.Chat.
+  contact_support-videos-link: Ver Videos
+
+  contact_support-chat-title: Habla con nosotros
+  contact_support-chat-desc: Chatee con nosotros y con miles de desarrolladores que están creando la mejor plataforma de chat en el servidor abierto Rocket.Chat
+  contact_support-chat-link: Unirse al servidor Open
+
+  contact_support-meet-title: Ven a conocernos
+  contact_support-meet-desc: Ven a saludar a una reunión o conferencia local, cuéntanos cómo lo personalizaste para satisfacer tus necesidades y mejoraron la comunicación de tu equipo.
+  contact_support-meet-link: Ver eventos
+
+
 
 

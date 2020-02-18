@@ -84,3 +84,47 @@ pt:
   partnership-interest: Interesse de Parceria
   reseller: Revendedor
   parner_text: Entre em contato para saber como você pode virar um parceiro oficial da Rocket.Chat
+
+es:
+# Form Fields and Labels
+  select-department: Seleccione un departamento
+  sales: Ventas
+  support: Soporte
+  partners: Socios
+  first-name: Nombre de pila
+  type-first-name: Escribe tu nombre
+  last-name: Apellido
+  type-last-name: Escribe tu apellido
+  email-address: Correo Electronico
+  type-email-address: escriba su direccion de correo electronico
+  company: Empresa
+  type-company: Escribe el nombre de tu empresa
+  country: País
+  select-country: Select Country
+  organization: Seleccionar país
+  type-organization: Escriba el nombre de su empresa, organización o comunidad.
+  people: personas
+  or-more: o más
+  question: Pregunta
+  type-question: Escriba su pregunta
+  send-message: Enviar mensaje
+  subject: Sujeto
+  type-subject: Escribe el asunto de tu mensaje
+  message: Mensaje
+  type-message: Escribe tu mensaje
+  repeat-captcha: Repetir Captcha
+  job-title: Título profesional
+  type-job-title: Escribe el título de tu trabajo
+  website: Website
+  type-website: Escribe tu website
+  company-size: Tamaño de la empresa
+  select-size: Seleccione una talla
+  select-option: Seleccione una opción
+  sales-team-size: Tamaño del equipo de ventas
+  expertise: pericia
+  collaboration-products: Productos de colaboración
+  infrastructure: Infraestructura
+  software-factory: Fábrica de software
+  partnership-interest: Partnership Interest
+  reseller: Revendedores
+  parner_text: Contáctanos para saber cómo puedes convertirte en un socio Rocket.Chat aprobado.
