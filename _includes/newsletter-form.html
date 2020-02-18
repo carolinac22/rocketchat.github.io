@@ -17,7 +17,7 @@
         <input type='hidden' name='Lead Source' id="lead-source" value='Newsletter' />
 
         <fieldset style='display: none;'>
-            <input type='hidden' maxlength='80' name='Last Name' value="empty" />
+            <input type='hidden' id="last-name" maxlength='80' name='Last Name' />
         </fieldset>
 
         <fieldset>
@@ -36,6 +36,7 @@
             var email = '';
 
             function checkMandatory2982481000017181187() {
+                $('.newsletter-form #last-name').val($('.newsletter-form #email').val());
                 for (i = 0; i < mndFileds.length; i++) {
                     var fieldObj = document.forms['WebToLeads2982481000017181187'][mndFileds[i]];
                     if (fieldObj) {
