@@ -300,3 +300,17 @@ body.dark .featherlight.featherlight-form .featherlight-content {
     color: #fff;
   }
 }
+
+#lookup-form {
+  fieldset {
+    display: flex;
+  }
+
+  .button {
+    height: 52px;
+    margin-left: 16px;
+    align-items: center;
+  }
+
+
+}
