@@ -159,7 +159,7 @@ $(document).ready(function() {
       $('.switch').removeClass('active');
       $(".cloud").addClass(' active');
       $('.cloud__container').css("display","block");
-      $('.pricing-cloud-message').css("display","flex");
+      $('.pricing-cloud-message').css("display","block");
       $('.self-managed__container').css("display","none");
     }
   }
@@ -190,7 +190,7 @@ $('.switch').on('click', function () {
   if ($(this).hasClass('cloud')){
     $('.cloud__container').css("display","block");
     $('.self-managed__container').css("display","none");
-    $('.pricing-cloud-message').css("display","flex");
+    $('.pricing-cloud-message').css("display","block");
   } else if ($(this).hasClass('self-managed')){
     $('.cloud__container').css("display","none");
     $('.self-managed__container').css("display","block");
