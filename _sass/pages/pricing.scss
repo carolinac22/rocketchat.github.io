@@ -9,13 +9,28 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #fff;
-  background-color: $brand;
   background-position: 50% 105%; // Workaround for a bug in chrome, that creates a 1px gap under the background image, creating a blue line in this case.
+
+  @media screen and (max-width: $tablet) {
+    background: $brand;
+  }
+}
+
+.pricing-hero__background {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  background-position: center bottom;
+  background: linear-gradient(0deg, #fff 5%, #1d74f5 0% 50%);
 
   @media screen and (max-width: $tablet) {
   }
 }
+
+
 .pricing {
 
   .hero {
@@ -23,12 +38,26 @@
     min-height: unset !important;
   }
 
+  .pricing_main {
+    @media screen and (max-width: $tablet) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
   &-cloud-message {
+    margin: 16px auto;
     display: none;
-    flex-direction: column;
-    font-weight: 600;
-    width: max-content;
-    margin: auto;
+    width: 1040px;
+    background: rgba(26, 34, 50, 0.24);
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    margin-top: 16px;
+    padding: 4px;
+    font-weight: 450;
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
   }
 
   &-concession{
@@ -72,9 +101,11 @@
 
   .switch-container {
     display: flex;
-    width: 434px;
+    width: 892px;
     margin: 0 auto;
-    justify-content: space-between;
+    border-radius: 2px;
+    border: #FFF 1px solid;
+    align-items: center;
     @media screen and (max-width: $tablet) {
       width: 100%;
     }
@@ -85,32 +116,47 @@
   }
 
   .switch {
-    border-radius: 2px;
-    height: 43px;
-    line-height: 42px;
-    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    height: 84px;
+    font-weight: 800;
+    height: max-content;
     font-size: 16px;
     width: 50%;
     background: $brand;
     color: #fff;
-    border: #FFF 1px solid;
-    margin: 0 .5em;
+    margin: 0;
+    padding: 16px;
     cursor: pointer;
 
     &.active {
       background-color: #fff;
       color: $brand;
+
+      p {
+        color: $grey;
+      }
     }
 
-
-
     p {
-      color: #FFFFFF;
+      color: #fff;
       font-size: 16px;
       font-weight: 500;
-      text-align: center;
-      letter-spacing: 0.25px;
-      line-height: 42px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: $tablet) {
+      height: 106px;
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: $mobile) {
+      height: 126px;
+        p {
+          font-size: 12px;
+        }
     }
   }
 
@@ -123,14 +169,20 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top: -216px;
+  margin-top: -326px;
 
   @media screen and (max-width: $tablet) {
     flex-direction: column;
+    margin-top: -283px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    margin-top: -205px;
   }
 
   .plan_wrapper {
-    width: 25%;
+    width: 335px;
+    height: 438px;
     border: 1px solid #e7ebf2;
     border-right-width: 0;
     color: #6b7d99;

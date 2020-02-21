@@ -20,28 +20,31 @@ redirect_from:
 <section class="hero">
   <div class="space--2"></div>
   <div class="flex-grid grid--justify-around align--center">
-    <div class="col--haft">
+    <div class="col">
       <p class="label theme_type--dark">Pricings &amp; plans</p>
       <h2 class="display theme_type--dark">Select the right plan for your organization</h2>
       <div class="switch-container">
-        <a class="switch self-managed active" href="#self">Self-Managed</a>
-        <a class="switch cloud" href="#cloud">Cloud</a>
+        <a class="switch self-managed active" href="#self">
+          Self-Managed
+          <p class="display--small">Host your own instance on-premises or in the cloud</p>
+        </a>
+        <a class="switch cloud" href="#cloud">
+          SAAS
+          <p class="display--small">Cloud offering hosted by <b>Rocket.Chat</b></p>
+        </a>
+
       </div>
-      <div class="space--2"></div>
-      <div class="pricing-cloud-message">
-        <p class="display--medium theme_type--dark">SaaS offering hosted by Rocket.Chat</p>
-        <p class="display--medium theme_type--dark">Try Rocket.Chat Cloud for 14 days</p>
-        <p class="display--medium theme_type--dark">No credit card required</p>
-      </div>
+      <div class="pricing-cloud-message">Try Rocket.Chat Saas for  <b>14 days</b>. No credit card required</div>
       </div>
     </div>
   </div>
   <div class="pricing-hero__image"></div>
+  <div class="pricing-hero__background"></div>
 </section>
 
 <div class="cloud__container">
 
-  <section class="container" id="pricing">
+  <section class="container pricing_main" id="pricing">
 
     <div class="pricing_four-column">
       <div class="plan_wrapper card--shadow">
@@ -108,6 +111,14 @@ redirect_from:
     </div>
   </section>
   <section class="container">
+    <div class="space--2"></div>
+    <div class="flex-grid grid--justify-around align--center">
+      <div class="col--haft">
+        <p class="label theme_type--light">Are you in doubt?</p>
+        <h2 class="display">Compare Our Plans</h2>
+      </div>
+    </div>
+
     {% capture header %}
       <thead>
         <tr>
@@ -402,7 +413,7 @@ redirect_from:
 </div>
 
 <div class="self-managed__container">
-  <section class="container">
+  <section class="container pricing_main">
     <div class="pricing_four-column">
       <div class="plan_wrapper card--shadow">
         <div class="plan_content">
@@ -419,7 +430,7 @@ redirect_from:
 
         <div class="plan_wrapper card--shadow">
           <div class="plan_content">
-              <h2 class="display">Pro**</h2>
+              <h2 class="display">Pro</h2>
               <br />
               <p class="theme_type--light">For businesses ready to step up their team communication and access more features.</p>
               <p class="display">$3
@@ -429,7 +440,8 @@ redirect_from:
                 <small class="label--small"><span class="label--small theme_type--light">/ User Annually</span></small>
               </p>
               <br />
-          </div>
+            </div>
+            <small class="label--small"><span class="label--small theme_type--light">License available for containers deployed with Docker</span></small>
           <footer>
             <a href="#" class="button trial contact" data-featherlight="#sales-contact-form-wrap" data-featherlight-variant="featherlight-form" data-label="Self-Managed Pro" rel="noopener noreferrer">Contact Us</a>
           </footer>
@@ -438,7 +450,7 @@ redirect_from:
 
           <div class="plan_wrapper card--shadow">
             <div class="plan_content">
-              <h2 class="display">Enterprise**</h2>
+              <h2 class="display">Enterprise</h2>
               <br />
               <p class="theme_type--light">For businesses needing high-level scalability, management and unlimited features.</p>
               <p class="display--medium">Tiered Pricing <br>
@@ -447,14 +459,21 @@ redirect_from:
               </p>
               <br />
             </div>
+            <small class="label--small"><span class="label--small theme_type--light">License available for containers deployed with Docker</span></small>
             <footer>
               <a href="#" class="button trial contact" data-featherlight="#sales-contact-form-wrap" data-featherlight-variant="featherlight-form" data-label="Self-Managed Enterprise" rel="noopener noreferrer">Contact Us</a>
             </footer>
           </div>
         </div>
-        <p class="self-disclaimer">** License available for containers deployed with Docker</p>
   </section>
   <section class="container">
+    <div class="space--2"></div>
+    <div class="flex-grid grid--justify-around align--center">
+      <div class="col--haft">
+        <p class="label theme_type--light">Are you in doubt?</p>
+        <h2 class="display">Compare Our Plans</h2>
+      </div>
+    </div>
       {% capture header %}
         <thead>
           <tr>
