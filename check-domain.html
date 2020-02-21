@@ -9,7 +9,7 @@ redirect_from:
 - /server-lookup/
 ---
 
-<p> Is this domain hosted by Rocket.Chat? </p>
+<p> Is this Rocket.Chat Workspace Hosted by Rocket.Chat? </p>
 
 <form id="lookup-form" onSubmit='return isHosted()'>
     <fieldset>
@@ -22,10 +22,12 @@ redirect_from:
     </fieldset>
 </form>
 
-<div class="lookup-result">
+<div id="lookup-result" class="lookup-result hidden">
     <h3 class="display--small">Result:</h3>
     <p id="result-text"></p>
 </div>
+
+<p>Contact <a class="button--link" href="mailto:legal@rocket.chat">legal@rocket.chat</a> in case of legal requests or <a class="button--link" href="mailto:support@rocket.chat" >support@rocket.chat</a> in case of support requests</p>
 
 <script>
     var form = document.getElementById("lookup-form");
@@ -35,13 +37,22 @@ redirect_from:
         event.preventDefault();
         var xhttp = new XMLHttpRequest();
         var domain = document.getElementById("lookup").value
+        var resultWrapper = document.getElementById("lookup-result")
         var resultElement = document.getElementById("result-text");
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var data = JSON.parse(this.responseText);
                 console.log(data);
                 resultElement.innerHTML = '';
-                resultElement.append(data.hosted);
+                resultWrapper.className = 'lookup-result'
+                if(data.hosted) {
+                    resultElement.className = 'hosted-by-true'
+                    resultElement.append('True. This Workspace is hosted by Rocket.Chat');
+                } else {
+                    resultElement.className = 'hosted-by-false'
+                    resultElement.append('False. This Workspace is NOT hosted by Rocket.Chat');
+                }
+
 
             }
         };

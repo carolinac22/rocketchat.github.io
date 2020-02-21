@@ -311,6 +311,20 @@ body.dark .featherlight.featherlight-form .featherlight-content {
     margin-left: 16px;
     align-items: center;
   }
+}
 
+.lookup-result {
+  display: block;
+  &.hidden {
+    display: none;
+  }
+}
 
+.hosted-by {
+  &-true {
+    color: $g500;
+  }
+  &-false {
+    color: $warning;
+  }
 }
