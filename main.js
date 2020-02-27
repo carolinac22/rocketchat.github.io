@@ -1,6 +1,5 @@
 
 var pathname = window.location.pathname;
-console.log(pathname);
 
 function debounce(func, wait, immediate) {
 	var timeout;

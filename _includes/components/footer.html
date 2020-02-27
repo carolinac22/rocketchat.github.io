@@ -83,7 +83,6 @@
             <select class="select language-selector {{page.theme}}" onchange="
               var lang = this.value;
               var url = window.location.href;
-              debugger
               url = url.replace('/pt','').replace('/es','');
               if (lang === 'en') {
                 url = url.replace('/pt', '');
