@@ -1,5 +1,5 @@
 ---
-title: "Migrating to SLACK? Discover why Rocket.chat could be your best option"
+title: "Migrating to Slack? Discover why Rocket.Chat could be your best option"
 categories:
 - News
 - Product
@@ -15,11 +15,11 @@ Let's check some criteria to help you choose the right solution!
 
 For sure the first main impact will be in pricing since Slack is more expensive than HipChat. For the video conference feature, for example, the former could roughly charge $8 per user on a monthly basis plan (includes this feature) while Hipchat´s users would be charged $2
 
-By contrast, this solution costs our Rocket.chat clients $3 per person per month.The great news? This price includes other features like high scalability cluster, file storage migrate tool, and even more. Check the rest of [Rocket.chat features](https://rocket.chat/pricing).
+By contrast, this solution costs our Rocket.Chat clients $3 per person per month.The great news? This price includes other features like high scalability cluster, file storage migrate tool, and even more. Check the rest of [Rocket.Chat features](https://rocket.chat/pricing).
 
 ### ON PREMISE VS CLOUD VERSION
 
-Slack offers the cloud version only. However, Hipchat users would have available the on prem version. The latter version is preferred by some enterprises and organizations for several reasons such as security, ease, data protection and so on. Luckily, Rocket.chat opts for both versions, you can freely choose the infrastructure that fits your needs and your own security protocols.
+Slack offers the cloud version only. However, Hipchat users would have available the on prem version. The latter version is preferred by some enterprises and organizations for several reasons such as security, ease, data protection and so on. Luckily, Rocket.Chat opts for both versions, you can freely choose the infrastructure that fits your needs and your own security protocols.
 
 ### SECURITY
 
@@ -37,11 +37,11 @@ Organizations count with a plethora of communication and collaboration tools to 
 
 ## FLEXIBILITY AND AGILITY
 
-Rocket.chat´s technology allows more than 1000k integrations. From bots, to facebook messenger  whatsapp or slack, the options are almost unlimited. Furthermore, its short release cycle does not only allow an agile usability but also scalability whether you opt for a self managed or saas version
+Rocket.Chat´s technology allows more than 1000k integrations. From bots, to facebook messenger  whatsapp or slack, the options are almost unlimited. Furthermore, its short release cycle does not only allow an agile usability but also scalability whether you opt for a self managed or saas version
 
 ### INTERCONNECTIVITY
 
-Interconnectivity with the federation is a unique feature that enables the communication with other Rocket.chat servers. Find and exchange messages and files unlimitedly.
+Interconnectivity with the federation is a unique feature that enables the communication with other Rocket.Chat servers. Find and exchange messages and files unlimitedly.
 
 ### SAFE FOR YOUR DATA
 
@@ -59,6 +59,6 @@ Yes, that's it!
 
 Rocket.Chat also has integrations with the Atlassian suite products: Bitbucket, Confluence and Jira, so you can keep your DevOps setup when moving over.
 
-These reasons make Rocket.chat´s your perfect ally to improve the communication inside your organization and also with your clients. Stop losing potential leads because of a wrong communication. [Let's work together](https://rocket.chat/contact).
+These reasons make Rocket.Chat´s your perfect ally to improve the communication inside your organization and also with your clients. Stop losing potential leads because of a wrong communication. [Let's work together](https://rocket.chat/contact).
 
 **Subscribe to our newsletter and receive constant updates on our solutions !**

@@ -1,6 +1,6 @@
 en:
-  home-hero_title: Open Source Team Communication
-  home-hero_description: Rocket.Chat is free, unlimited and open source. Replace email, HipChat & Slack with the ultimate team chat software solution.
+  home-hero_title: Workstream Collaboration & Omnichannel Customer Engagement
+  home-hero_description: Control your communication, manage your data and have your own collaboration tool to improve team productivity. Rocket.Chat is scalable and open source, replace email and improve your digital workflow.
   home-hero_trial_button: Start Cloud Trial
   home-hero_install_button: Start Own Server
   clients_trusted_by: Trusted By
@@ -130,14 +130,14 @@ es:
   home-hero_install_button: Instálalo en tu servidor
   clients_trusted_by: Ellos ya depositaron su confianza en nosotros.
   home-landingpage_title: Reemplaza el correo electrónico
-  home-landingpage_description_1: Crea un grupo privado para llevar la comunicación de tu equipo al siguiente nivel con mayor transparencia y prescinde de la necesidad de CC/BCC en tu correo a través de los canales de Rocket.chat
+  home-landingpage_description_1: Crea un grupo privado para llevar la comunicación de tu equipo al siguiente nivel con mayor transparencia y prescinde de la necesidad de CC/BCC en tu correo a través de los canales de Rocket.Chat
   home-landingpage_description_2: Notifica inmediatamente a ciertos miembros de tu equipo a través de la mención @username o si deseas notificar a todos usa @all.
   home-landingpage2_title: Chat para Equipos
   home-landingpage2_description_1: Realiza video/ audio llamadas y comparte tu pantalla para un trabajo colaborativo más eficiente.
   home-landingpage2_description_2: Discute y comparte ideas, archivos y proyectos en tiempo real o a través de nuestro chat asincrónico y dale un impulso a tu productividad
-  home-landingpage3_title: Qué es Rocket.chat?
+  home-landingpage3_title: Qué es Rocket.Chat?
   home-landingpage3_description_1: Mejora la comunicación y colaboración en tu equipo de trabajo, comparte archivos, chatea en tiempo real u opta por video/ audio conferencia.
-  home-landingpage3_description_2: Reproduce el video y descuble porque Rocket.chat es la plataforma ideal tanto para tu equipo como para tus necesidades corporativas.
+  home-landingpage3_description_2: Reproduce el video y descuble porque Rocket.Chat es la plataforma ideal tanto para tu equipo como para tus necesidades corporativas.
   home-landingpage3_watch_now: "Míralo ahora:"
   home-community_label: Open source
   home-community_title: Un Universo de posibilidades
@@ -150,37 +150,37 @@ es:
   migrating_from: Usabas
   choose_from:  Selecciona uno de nuestros dos
   hipchat_importers: Hipchat importers.
-  learn_about_importing: Descubre más acerca de la importación hacia Rocket.chat
+  learn_about_importing: Descubre más acerca de la importación hacia Rocket.Chat
 
-  livechat_description1: La tecnología Rocket.chat te permite agregar widgets de chat en vivo para cualquier sitio web o aplicación móvil. Mejora desde hoy la comunicación entre tus equipos  y atiende a tus clientes con mayor eficiencia.
+  livechat_description1: La tecnología Rocket.Chat te permite agregar widgets de chat en vivo para cualquier sitio web o aplicación móvil. Mejora desde hoy la comunicación entre tus equipos  y atiende a tus clientes con mayor eficiencia.
   livechat_description2: Integra nuestra tecnología con otros canales de comunicación y ahorra así tiempo y dinero. Comienza a brindar asistencia técnica, responde las dudas de tus clientes y optimiza la conversión de potenciales clientes.
 
   realtime_title: Traducción en tiempo real
-  realtime_description1: Rocket.chat utiliza tecnología avanzada de machine learning para una traducción simultánea de mensajes en tiempo real
+  realtime_description1: Rocket.Chat utiliza tecnología avanzada de machine learning para una traducción simultánea de mensajes en tiempo real
   realtime_description2: Nuestra interfaz de usuario ya ha sido traducido a más de 50 idiomas, superando así a todos los demás servicios de chat.
 
   home-install_title: Para todas las plataformas
-  home-install_description: Integra Rocket.chat en cualquier lugar con nuestras aplicaciones web, desktop y móviles, chat en vivo y SDK.
+  home-install_description: Integra Rocket.Chat en cualquier lugar con nuestras aplicaciones web, desktop y móviles, chat en vivo y SDK.
 
   customization_title: Personalización ilimitada
   customization_description: Agrega o remueve funcionalidades y selecciona tus propias integraciones, plugins y temas para que tu plataforma se adapte a tus gustos y necesidades.
 
   integrations_title: Integraciones
-  integrations_description: Añade intregraciones Webhook de entrada y salida a Rocket.chat
+  integrations_description: Añade intregraciones Webhook de entrada y salida a Rocket.Chat
 
   plugins_title: Plugins
-  plugins_description: Integraciones funcionalidades Rocket.chat a aplicaciones populares como Drupal o Pidging.
+  plugins_description: Integraciones funcionalidades Rocket.Chat a aplicaciones populares como Drupal o Pidging.
 
   themes_title: Temas
   themes_description: Personaliza tu interfaz de usuario para sustituir los estilos disponibles by default
 
   api_title: APIs robustas
-  api_description: Usa el API REST de Rocket.chat, de chat en vivo o el de tiempo real.
+  api_description: Usa el API REST de Rocket.Chat, de chat en vivo o el de tiempo real.
 
   importers_title: Importadores de dados
   importers_description: Migra sin inconvenientes de otros softwares de chat y traiga con ello toda su información gracias a nuestros importadores de datos para Slack y HipChat.
 
   marketplace_title: Marketplace
-  marketplace_description: Localiza e instala aplicaciones para extender la funcionalidad de Rocket.chat. También puedes usar nuestra tecnología para subir y vender tus propias aplicaciones.
+  marketplace_description: Localiza e instala aplicaciones para extender la funcionalidad de Rocket.Chat. También puedes usar nuestra tecnología para subir y vender tus propias aplicaciones.
 
   marketplace_find: Encuentra apps ahora

@@ -23,7 +23,7 @@ Rocket.Chat's CEO, Gabriel Engel, sees token channels as the first step towards 
 
 Adam Levine, Tokenly CEO, is equally excited about the future opportunities of the partnership:
 
-> "Rocket.Chat has been an amazing partner, and we're very excited to be launching the first wave of our collaboration with Token Controlled Access for Rocket.chat channels. What started as a way to let Crypto communities create members-only social spaces with access governed by the blockchain has opened the door to many empowering possibilities."
+> "Rocket.Chat has been an amazing partner, and we're very excited to be launching the first wave of our collaboration with Token Controlled Access for Rocket.Chat channels. What started as a way to let Crypto communities create members-only social spaces with access governed by the blockchain has opened the door to many empowering possibilities."
 
 **Rocket.Chat** is the leading free and open source team chat alternative to Slack. Rocket.Chat is more than just a team chat platform, it is a passionate and active open source community of contributors.
 **Tokenly** is a blockchain solutions company focusing on the development of token applications that empower token access, ownership and buying power.
