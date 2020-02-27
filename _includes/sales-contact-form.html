@@ -65,6 +65,15 @@
     </fieldset>
 
     <fieldset>
+      <label class="label--small theme_type--grey" for="Website">{{tf.website}}</label>
+      <div data-prefix="https://">
+        <input type="text" id="Website" class="input input--{{include.theme}}" name="website"
+          pattern="[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)"
+          placeholder="{{tf.type-website}}" />
+      </div>
+    </fieldset>
+
+    <fieldset>
       <label class="label--small theme_type--grey" for="message">{{tf.question}}</label>
       <textarea required rows="7" class="input input--{{include.theme}} question" name="Description" id="message" placeholder="{{tf.type-question}}"></textarea>
     </fieldset>
