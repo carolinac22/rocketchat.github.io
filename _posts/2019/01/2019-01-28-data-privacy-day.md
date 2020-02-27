@@ -14,7 +14,7 @@ Happy Data Privacy Day!
 
 Today we highlight how important users' data privacy is to us, and how we ensure that it remains protected at all times, day in, day out.
 
-First and foremost, Rocket.Chat allows users to stay in control of their data by offering a self hosted option as standard.
+First and foremost, Rocket.Chat allows users to stay in control of their data by offering a self managed option as standard.
 
 We design Rocket.Chat with privacy in mind.  We also build and release as open source which allows our code to be independently audited by 100s of contributors.
 

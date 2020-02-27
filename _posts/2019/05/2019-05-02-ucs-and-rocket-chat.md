@@ -16,7 +16,7 @@ Similar to  Rocket.Chat, Univention is a global company with [several active ope
 
 Rocket.Chat users faced with similar challenges can now finally - through the integration of Rocket.Chat into Univention Corporate Server (UCS) - enjoy an industry proven widely deployed open source solution. Recently, Rocket.Chat became available as easy to install app on UCS via Univention App Center, our platform marketplace.
 
-In this blog posting I’d like to give interested Rocket.Chat administrators an overview what value UCS can bring to your self-hosted Rocket.Chat environment and the identity management repertoire.
+In this blog posting I’d like to give interested Rocket.Chat administrators an overview what value UCS can bring to your self-managed Rocket.Chat environment and the identity management repertoire.
 
 With your Rocket.Chat deployment on UCS, you have a strong foundation to connect it to an existing Active Directory environment. The integration between Rocket.Chat and UCS remains slim and UCS functions as a proxy and takes care of the identity management. UCS is well-tested, it is continuously developed and maintained, and has proven its stability, reliability and openness in hundreds of  production environments over more than a decade because it is used by organizations of every size - from a few people up to hundreds of thousands of people.
 
