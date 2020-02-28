@@ -4,13 +4,14 @@
 
   @media screen and (min-width: $tablet) {
     padding: 0;
-    z-index: -1;
     max-width: 66%;
     overflow: visible;
   }
 }
 
 .contact-map {
+  user-select: none;
+
   @media screen and (min-width: $tablet) {
     position: relative;
 
@@ -25,6 +26,11 @@
       opacity: 1;
     }
   }
+}
+
+.contact-map__address {
+  user-select: text;
+  font-style: normal;
 }
 
 .contact-map__map {
