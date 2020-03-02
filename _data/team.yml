@@ -230,15 +230,6 @@
   photo: yes
   country: Ukraine
 
-- name: Guilherme Cruz
-  role: Software Developer
-  department: Cloud
-  github_username: guicruzzs
-  username: guilherme.cruz
-  twitter: cruzguilherm
-  photo: yes
-  country: Brazil
-
 - name: Djorkaeff Pereira
   role: React Native Developer
   department: Mobile
