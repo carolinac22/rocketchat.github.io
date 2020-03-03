@@ -24,7 +24,7 @@ The small details count! Sharing breakfast, lunch and dinner embellished with ev
 
 ![](/images/posts/2020/03/summit2.jpg "summit.jpg")
 
-We are all going towards the same vision. Gabriel Engel, CEO, shared his story and how he and the first team members started rocket.Chat from scratch.
+We are all going towards the same vision. Gabriel Engel, CEO, shared his story and how he and the first team members started Rocket.Chat from scratch.
 
 After a very productive brainstorming session, We all defined and sharpened what values represent and differentiate us from our competitors. Additionally, each Rocket.Chat´s department shared their objectives and the roadmap for 2020.
 
@@ -40,4 +40,4 @@ Not everything was work. There was a lot of excitement and fun. Among the funnie
 
 Individual activities were available as well. They were adapted for those risky lovers and those who preferred more calmed activities. Some of our bravest members did bungee jumping and canopy. But we also counted with rafting, paintball, and so on.
 
-It was for sure a great experience. It was only possible with the unconditional support of ... who took care of all the details for a great event. We hope to see everyone again in 2021!
+It was for sure a great experience. It was only possible with the unconditional support of Marcelo Schmidt, Thays Constante, Laura Coutinho and Otávio Torres who took care of all the details for a great event. We hope to see everyone again in 2021!
