@@ -6,9 +6,6 @@ dateEvent: 2018-07-7 10:00:00
 webinarURL: https://youtube.com/embed/aeMgkHpSWr0
 bgSize: cover
 bgColor: 030c1a
-off-team-host: Diego Dorgam
-off-team-host-image: "/images/default.svg"
-off-team-host-role: Bot Engineer
 gmt: -3
 language: USA
 cover: https://img.youtube.com/vi/aeMgkHpSWr0/maxresdefault.jpg
