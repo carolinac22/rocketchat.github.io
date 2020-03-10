@@ -3,8 +3,7 @@
 <div id='crmWebToEntityForm'>
   <script src='https://www.google.com/recaptcha/api.js' async defer></script>
   <form id='sales-contact-form' action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads2982481000014889035'
-    method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2982481000014889035()'
-    accept-charset='UTF-8' data-validate='true'>
+    method='POST' accept-charset='UTF-8' data-validate='true'>
     <input type='hidden' name='zc_gad' value='' />
     <input type='hidden' name='xnQsjsdp' value='96b118485996dc2547c37fc8650b520a7e1d58b5d470b1390a3f560ed46df03b' />
     <input type='hidden' name='xmIwtLD' value='8ea917c61ae7f2f107ac548ac534375c2fbfbf2e08cc8dacf15a9cca352b4b0e' />
@@ -103,14 +102,14 @@
       /* Do not remove this code. */
       function rccallback() {
         document.getElementById('sales-contact-form-formsubmit').removeAttribute('disabled');
-        if (document.getElementById('privacyTool') != undefined) {
+        if (document.getElementById('privacyTool')) {
           var recap = document.getElementById('recap');
           recap.setAttribute('captcha-verified', true);
         }
       }
 
       function checkReCapSubmit() {
-        if (document.getElementById('recap') != undefined) {
+        if (document.getElementById('recap')) {
           var submitbutton = document.getElementById('sales-contact-form-formsubmit');
           var recap = document.getElementById('recap');
           if (recap.getAttribute('captcha-verified') == 'false') {
@@ -152,8 +151,16 @@
             } catch (e) { }
           }
         }
+
         document.getElementById('sales-contact-form-formsubmit').disabled = true;
       }
+
+      document.getElementById('sales-contact-form').onsubmit = function(event) {
+        document.charset = 'UTF-8';
+        if (!checkMandatory2982481000014889035(event)) {
+          event.preventDefault();
+        }
+      };
     </script>
 
     <script>
