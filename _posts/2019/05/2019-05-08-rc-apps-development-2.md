@@ -8,7 +8,6 @@ bgSize: cover
 bgColor: 030c1a
 hosts:
   - Douglas Gubert
-  - Bruno Raymundo
 language: USA
 gmt: -3
 cover: /images/posts/2019/05/webinar/webinar-apps-2.png

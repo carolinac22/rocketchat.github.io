@@ -6,7 +6,6 @@ dateEvent: 2019-06-11 14:30:00
 bgSize: cover
 bgColor: 030c1a
 hosts:
-    - Bruno Raymundo
     - Carolina Freitas
 language: USA
 gmt: -3

@@ -7,7 +7,7 @@ webinarURL: https://youtube.com/embed/PxtQp8N3Pww
 bgSize: cover
 bgColor: 030c1a
 off-team-host: Diego Dorgam
-off-team-host-image: "/images/team/member/diego-dorgam-01.jpg"
+off-team-host-image: "/images/default.svg"
 off-team-host-role: Bot Engineer
 gmt: -3
 language: Brazil

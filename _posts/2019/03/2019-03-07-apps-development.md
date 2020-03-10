@@ -8,7 +8,6 @@ bgColor: 030c1a
 hosts:
   - Douglas Gubert
   - Rodrigo Nascimento
-  - Bruno Raymundo
 language: USA
 gmt: -3
 cover: /images/webinars/apps-development01.png
